@@ -1,0 +1,118 @@
+{
+  "version": "test-catalogue-2026-09-13-3track",
+  "generatedAt": "2026-09-13T17:04:00.000Z",
+  "orchestras": [
+    { "id": "di-sarli", "displayName": "Carlos Di Sarli" },
+    { "id": "darienzo", "displayName": "Juan D'Arienzo" },
+    { "id": "troilo", "displayName": "Anibal Troilo" },
+    { "id": "pugliese", "displayName": "Osvaldo Pugliese" },
+    { "id": "piazzolla", "displayName": "Astor Piazzolla" }
+  ],
+  "tracks": [
+    {
+      "id": "2340290345",
+      "orchestraId": "di-sarli",
+      "title": "A La Gran Muñeca",
+      "previewUrl": "/audio/di-sarli.wav",
+      "durationMs": 30000
+    },
+    {
+      "id": "2340290345-2",
+      "orchestraId": "di-sarli",
+      "title": "A La Gran Muñeca (track 2)",
+      "previewUrl": "/audio/di-sarli-2.wav",
+      "durationMs": 30000
+    },
+    {
+      "id": "2340290345-3",
+      "orchestraId": "di-sarli",
+      "title": "A La Gran Muñeca (track 3)",
+      "previewUrl": "/audio/di-sarli-3.wav",
+      "durationMs": 30000
+    },
+    {
+      "id": "7565831",
+      "orchestraId": "darienzo",
+      "title": "El choclo",
+      "previewUrl": "/audio/darienzo.wav",
+      "durationMs": 30000
+    },
+    {
+      "id": "7565831-2",
+      "orchestraId": "darienzo",
+      "title": "El choclo (track 2)",
+      "previewUrl": "/audio/darienzo-2.wav",
+      "durationMs": 30000
+    },
+    {
+      "id": "7565831-3",
+      "orchestraId": "darienzo",
+      "title": "El choclo (track 3)",
+      "previewUrl": "/audio/darienzo-3.wav",
+      "durationMs": 30000
+    },
+    {
+      "id": "4549802",
+      "orchestraId": "troilo",
+      "title": "Toda Mi Vida",
+      "previewUrl": "/audio/troilo.wav",
+      "durationMs": 30000
+    },
+    {
+      "id": "4549802-2",
+      "orchestraId": "troilo",
+      "title": "Toda Mi Vida (track 2)",
+      "previewUrl": "/audio/troilo-2.wav",
+      "durationMs": 30000
+    },
+    {
+      "id": "4549802-3",
+      "orchestraId": "troilo",
+      "title": "Toda Mi Vida (track 3)",
+      "previewUrl": "/audio/troilo-3.wav",
+      "durationMs": 30000
+    },
+    {
+      "id": "4853357",
+      "orchestraId": "pugliese",
+      "title": "Farol",
+      "previewUrl": "/audio/pugliese.wav",
+      "durationMs": 30000
+    },
+    {
+      "id": "4853357-2",
+      "orchestraId": "pugliese",
+      "title": "Farol (track 2)",
+      "previewUrl": "/audio/pugliese-2.wav",
+      "durationMs": 30000
+    },
+    {
+      "id": "4853357-3",
+      "orchestraId": "pugliese",
+      "title": "Farol (track 3)",
+      "previewUrl": "/audio/pugliese-3.wav",
+      "durationMs": 30000
+    },
+    {
+      "id": "104700522",
+      "orchestraId": "piazzolla",
+      "title": "Libertango",
+      "previewUrl": "/audio/piazzolla.wav",
+      "durationMs": 30000
+    },
+    {
+      "id": "104700522-2",
+      "orchestraId": "piazzolla",
+      "title": "Libertango (track 2)",
+      "previewUrl": "/audio/piazzolla-2.wav",
+      "durationMs": 30000
+    },
+    {
+      "id": "104700522-3",
+      "orchestraId": "piazzolla",
+      "title": "Libertango (track 3)",
+      "previewUrl": "/audio/piazzolla-3.wav",
+      "durationMs": 30000
+    }
+  ]
+}

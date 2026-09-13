@@ -1,0 +1,133 @@
+{
+  "version": "archive-org-catalogue-2026-09-13",
+  "generatedAt": "2026-09-13T18:27:33.465Z",
+  "orchestras": [
+    {
+      "id": "di-sarli",
+      "displayName": "Carlos Di Sarli"
+    },
+    {
+      "id": "darienzo",
+      "displayName": "Juan D'Arienzo"
+    },
+    {
+      "id": "troilo",
+      "displayName": "Anibal Troilo"
+    },
+    {
+      "id": "pugliese",
+      "displayName": "Osvaldo Pugliese"
+    },
+    {
+      "id": "piazzolla",
+      "displayName": "Astor Piazzolla"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "disarli.florio.porqueregresastu-0",
+      "orchestraId": "di-sarli",
+      "title": "Por Que Regresas Tu",
+      "previewUrl": "https://archive.org/download/disarli.florio.porqueregresastu/disarli.florio.porqueregresastu.mp3",
+      "durationMs": 187000
+    },
+    {
+      "id": "disarli.florio.destinodeflor-1",
+      "orchestraId": "di-sarli",
+      "title": "Destino De Flor",
+      "previewUrl": "https://archive.org/download/disarli.florio.destinodeflor/disarli.florio.destinodeflor.mp3",
+      "durationMs": 175000
+    },
+    {
+      "id": "disarlicarasucia-2",
+      "orchestraId": "di-sarli",
+      "title": "Cara Sucia",
+      "previewUrl": "https://archive.org/download/disarlicarasucia/disarlicarasucia.mp3",
+      "durationMs": 167000
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-3",
+      "orchestraId": "darienzo",
+      "title": "Ana Maria",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20ana%20maria.mp3",
+      "durationMs": 133000
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-4",
+      "orchestraId": "darienzo",
+      "title": "A Suerte Y Verdad",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20a%20suerte%20y%20verdad.mp3",
+      "durationMs": 152000
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-5",
+      "orchestraId": "darienzo",
+      "title": "Clavel",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20clavel.mp3",
+      "durationMs": 142000
+    },
+    {
+      "id": "troilomilongueandoenelcuarenta-6",
+      "orchestraId": "troilo",
+      "title": "Milongueando En El 40",
+      "previewUrl": "https://archive.org/download/troilomilongueandoenelcuarenta/troilomilongueandoenelcuarenta.mp3",
+      "durationMs": 153000
+    },
+    {
+      "id": "troilo.uno-7",
+      "orchestraId": "troilo",
+      "title": "Uno",
+      "previewUrl": "https://archive.org/download/troilo.uno/Troilo.Uno.mp3",
+      "durationMs": 211000
+    },
+    {
+      "id": "troilo.sur-8",
+      "orchestraId": "troilo",
+      "title": "Sur",
+      "previewUrl": "https://archive.org/download/troilo.sur/Troilo.Sur.mp3",
+      "durationMs": 239000
+    },
+    {
+      "id": "pugliesegallociego-9",
+      "orchestraId": "pugliese",
+      "title": "Gallo Ciego",
+      "previewUrl": "https://archive.org/download/pugliesegallociego/pugliesegallociego.mp3",
+      "durationMs": 215000
+    },
+    {
+      "id": "Pugliese.brujo-10",
+      "orchestraId": "pugliese",
+      "title": "Si Sos Brujo",
+      "previewUrl": "https://archive.org/download/Pugliese.brujo/Pugliese.brujo.mp3",
+      "durationMs": 200000
+    },
+    {
+      "id": "pugliese.morena-11",
+      "orchestraId": "pugliese",
+      "title": "Morena",
+      "previewUrl": "https://archive.org/download/pugliese.morena/Pugliese.Morena.mp3",
+      "durationMs": 160000
+    },
+    {
+      "id": "HARAGANASTORPIAZZOLLAALDOCAMPOAMOR-12",
+      "orchestraId": "piazzolla",
+      "title": "Haragan",
+      "previewUrl": "https://archive.org/download/HARAGANASTORPIAZZOLLAALDOCAMPOAMOR/HARAGAN%20-%20%20ASTOR%20PIAZZOLLA%20%20%20ALDO%20CAMPOAMOR.mp3",
+      "durationMs": 156000
+    },
+    {
+      "id": "AstorPiazzollaBragatissimo-13",
+      "orchestraId": "piazzolla",
+      "title": "Bragatissimo",
+      "previewUrl": "https://archive.org/download/AstorPiazzollaBragatissimo/Astor%20Piazzolla%20-%20Bragatissimo.mp3",
+      "durationMs": 222000
+    },
+    {
+      "id": "escualo-3-astor-piazzolla-y-su-quinteto-tango-nuevo-live-in-utrecht-1984-3-14",
+      "orchestraId": "piazzolla",
+      "title": "Escualo (Live In Utrecht, 1984)",
+      "previewUrl": "https://archive.org/download/escualo-3-astor-piazzolla-y-su-quinteto-tango-nuevo-live-in-utrecht-1984-3/Escualo%20-3-%20ASTOR%20PIAZZOLLA%20%20y%20su%20Quinteto%20Tango%20Nuevo%20-live%20in%20Utrecht%20(1984)%20-3-.mp3",
+      "durationMs": 204000
+    }
+  ]
+}
