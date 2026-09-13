@@ -55,6 +55,17 @@ file's contents for the `/catalogue/starter-catalogue.json` request whenever `np
 is running; this does not affect `npm run build`/`npm run preview`, and is never used by
 automated tests (those load catalogue fixtures directly).
 
+## Deploying to GitHub Pages
+
+`.github/workflows/deploy-pages.yml` builds this app and deploys `dist/` to GitHub Pages on
+every push to `main` (and via manual `workflow_dispatch`). It sets `GITHUB_PAGES_BASE` to
+`/<repo-name>/` for that build only, since a project site (as opposed to a
+`<user>.github.io` user/org site) is served from a repo-name subpath — this rewrites all
+built asset URLs and the runtime catalogue fetch path (`vite.config.ts`'s `base` option, read
+by `loadCatalogue` via `import.meta.env.BASE_URL`) accordingly. Local dev/build/preview are
+unaffected. One-time setup in the repo's GitHub settings: **Settings → Pages → Source →
+GitHub Actions**.
+
 ## Validation
 
 ```bash

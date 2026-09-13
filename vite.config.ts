@@ -35,6 +35,10 @@ function devTestCatalogue(): Plugin {
 }
 
 export default defineConfig({
+  // GitHub Pages serves this project at https://<user>.github.io/<repo>/, so the workflow
+  // sets GITHUB_PAGES_BASE to that subpath for the Pages build only; local dev/build keep
+  // the default root base.
+  base: process.env.GITHUB_PAGES_BASE ?? '/',
   plugins: [
     react(),
     devTestCatalogue(),
@@ -48,7 +52,8 @@ export default defineConfig({
         theme_color: '#201b2c',
         background_color: '#201b2c',
         display: 'standalone',
-        start_url: '/',
+        start_url: '.',
+        scope: '.',
         icons: []
       },
       workbox: {

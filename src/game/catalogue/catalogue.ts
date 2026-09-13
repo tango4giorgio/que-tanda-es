@@ -20,7 +20,9 @@ export function validateCatalogue(value: unknown): Catalogue {
 }
 
 export async function loadCatalogue(fetcher: typeof fetch = fetch): Promise<Catalogue> {
-  const response = await fetcher('/catalogue/starter-catalogue.json');
+  // Use Vite's BASE_URL (always ends with '/') so this resolves correctly whether the app
+  // is served from the root (local dev/preview) or a subpath (e.g. GitHub Pages project sites).
+  const response = await fetcher(`${import.meta.env.BASE_URL}catalogue/starter-catalogue.json`);
   if (!response.ok) throw new Error(`Catalogue request failed with ${response.status}`);
   return validateCatalogue(await response.json());
 }
