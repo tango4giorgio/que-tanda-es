@@ -1,6 +1,6 @@
 {
-  "version": "archive-org-catalogue-2026-09-13",
-  "generatedAt": "2026-09-13T18:27:33.465Z",
+  "version": "archive-org-catalogue-2026-09-14",
+  "generatedAt": "2026-09-14T13:51:15.015Z",
   "orchestras": [
     {
       "id": "di-sarli",
@@ -25,109 +25,2076 @@
   ],
   "tracks": [
     {
-      "id": "disarli.florio.porqueregresastu-0",
-      "orchestraId": "di-sarli",
-      "title": "Por Que Regresas Tu",
-      "previewUrl": "https://archive.org/download/disarli.florio.porqueregresastu/disarli.florio.porqueregresastu.mp3",
-      "durationMs": 187000
+      "id": "darienzo.flete-0",
+      "orchestraId": "darienzo",
+      "title": "El flete",
+      "previewUrl": "https://archive.org/download/darienzo.flete/Darienzo.Flete.mp3",
+      "durationMs": 179050
     },
     {
-      "id": "disarli.florio.destinodeflor-1",
+      "id": "darienzo.laborde.quitenbailao-1",
+      "orchestraId": "darienzo",
+      "title": "Que me quiten lo bailao",
+      "previewUrl": "https://archive.org/download/darienzo.laborde.quitenbailao/Darienzo.Laborde.QuitenBailao.mp3",
+      "durationMs": 230450
+    },
+    {
+      "id": "darienzo.maure.metido-2",
+      "orchestraId": "darienzo",
+      "title": "Metido (Enamorado)",
+      "previewUrl": "https://archive.org/download/darienzo.maure.metido/DArienzo.Maure.Metido.mp3",
+      "durationMs": 152980
+    },
+    {
+      "id": "darienzo.rawson-3",
+      "orchestraId": "darienzo",
+      "title": "Rawson",
+      "previewUrl": "https://archive.org/download/darienzo.rawson/DArienzo.Rawson.mp3",
+      "durationMs": 213580
+    },
+    {
+      "id": "darienzo.valdez.cafe-4",
+      "orchestraId": "darienzo",
+      "title": "El ultimo cafe",
+      "previewUrl": "https://archive.org/download/darienzo.valdez.cafe/Darienzo.Valdez.Cafe.mp3",
+      "durationMs": 237380
+    },
+    {
+      "id": "darienzoechaguepensalobien-5",
+      "orchestraId": "darienzo",
+      "title": "Echague - Pensalo bien",
+      "previewUrl": "https://archive.org/download/darienzoechaguepensalobien/DArienzo.Echague.Pensalobien.mp3",
+      "durationMs": 143880
+    },
+    {
+      "id": "darienzomaureamarras-6",
+      "orchestraId": "darienzo",
+      "title": "Maure - Amarras",
+      "previewUrl": "https://archive.org/download/darienzomaureamarras/DArienzo.Maure.Amarras.mp3",
+      "durationMs": 210760
+    },
+    {
+      "id": "JoyasDelLunfardo-7",
+      "orchestraId": "darienzo",
+      "title": "Carton Junao [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/01%20Carton%20Junao%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 201770
+    },
+    {
+      "id": "JoyasDelLunfardo-8",
+      "orchestraId": "darienzo",
+      "title": "Chichipia [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/02%20Chichipia%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 169770
+    },
+    {
+      "id": "JoyasDelLunfardo-9",
+      "orchestraId": "darienzo",
+      "title": "Bien Pulenta [Tango] Alberto Echagüe",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/03%20Bien%20Pulenta%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 170160
+    },
+    {
+      "id": "JoyasDelLunfardo-10",
+      "orchestraId": "darienzo",
+      "title": "El Nene del Abasto [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/04%20El%20Nene%20del%20Abasto%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 174710
+    },
+    {
+      "id": "JoyasDelLunfardo-11",
+      "orchestraId": "darienzo",
+      "title": "Sarampion [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/05%20Sarampion%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 136910
+    },
+    {
+      "id": "JoyasDelLunfardo-12",
+      "orchestraId": "darienzo",
+      "title": "Cambalache [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/06%20Cambalache%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 173450
+    },
+    {
+      "id": "JoyasDelLunfardo-13",
+      "orchestraId": "darienzo",
+      "title": "Pituca [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/07%20Pituca%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 148980
+    },
+    {
+      "id": "JoyasDelLunfardo-14",
+      "orchestraId": "darienzo",
+      "title": "El Raje [Milonga]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/08%20El%20Raje%20%5BMilonga%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 185100
+    },
+    {
+      "id": "JoyasDelLunfardo-15",
+      "orchestraId": "darienzo",
+      "title": "Amarroto [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/09%20Amarroto%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 177870
+    },
+    {
+      "id": "JoyasDelLunfardo-16",
+      "orchestraId": "darienzo",
+      "title": "Barajando [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/10%20Barajando%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 173870
+    },
+    {
+      "id": "JoyasDelLunfardo-17",
+      "orchestraId": "darienzo",
+      "title": "Don Juan Mondiola [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/11%20Don%20Juan%20Mondiola%20-%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 164810
+    },
+    {
+      "id": "JoyasDelLunfardo-18",
+      "orchestraId": "darienzo",
+      "title": "Farabute [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/12%20Farabute%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 149710
+    },
+    {
+      "id": "JoyasDelLunfardo-19",
+      "orchestraId": "darienzo",
+      "title": "Corrientes y Esmeralda [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/13%20Corrientes%20y%20Esmeralda%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 152270
+    },
+    {
+      "id": "JoyasDelLunfardo-20",
+      "orchestraId": "darienzo",
+      "title": "Y Suma y Sigue [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/14%20Y%20Suma%20y%20Sigue%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 169820
+    },
+    {
+      "id": "JoyasDelLunfardo-21",
+      "orchestraId": "darienzo",
+      "title": "Che Existencialista [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/15%20Che%20Existencialista%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 164700
+    },
+    {
+      "id": "JoyasDelLunfardo-22",
+      "orchestraId": "darienzo",
+      "title": "Pan Comido [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/16%20Pan%20Comido%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 137460
+    },
+    {
+      "id": "JoyasDelLunfardo-23",
+      "orchestraId": "darienzo",
+      "title": "Las Cuarenta [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/17%20Las%20Cuarenta%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 144640
+    },
+    {
+      "id": "JoyasDelLunfardo-24",
+      "orchestraId": "darienzo",
+      "title": "Que Mufa Che [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/18%20Que%20Mufa%20Che%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 197880
+    },
+    {
+      "id": "JoyasDelLunfardo-25",
+      "orchestraId": "darienzo",
+      "title": "Mi Querida Sisebuta [Tango]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/19%20Mi%20Querida%20Sisebuta%20%5BTango%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 115070
+    },
+    {
+      "id": "JoyasDelLunfardo-26",
+      "orchestraId": "darienzo",
+      "title": "Peringundin [Milonga]",
+      "previewUrl": "https://archive.org/download/JoyasDelLunfardo/20%20Peringundin%20%5BMilonga%5D%20Alberto%20Echag%C3%BCe.mp3",
+      "durationMs": 137740
+    },
+    {
+      "id": "JuanDArienzoLilian-27",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo cicatrices",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20cicatrices.mp3",
+      "durationMs": 142050
+    },
+    {
+      "id": "JuanDArienzoLilian-28",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo claudinette",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20claudinette.mp3",
+      "durationMs": 150360
+    },
+    {
+      "id": "JuanDArienzoLilian-29",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo compadron",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20compadron.mp3",
+      "durationMs": 166240
+    },
+    {
+      "id": "JuanDArienzoLilian-30",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo cuatro palabras",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20cuatro%20palabras.mp3",
+      "durationMs": 130060
+    },
+    {
+      "id": "JuanDArienzoLilian-31",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo el olivo",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20el%20olivo.mp3",
+      "durationMs": 170000
+    },
+    {
+      "id": "JuanDArienzoLilian-32",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo enamorado",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20enamorado.mp3",
+      "durationMs": 153160
+    },
+    {
+      "id": "JuanDArienzoLilian-33",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo garronero",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20garronero.mp3",
+      "durationMs": 165540
+    },
+    {
+      "id": "JuanDArienzoLilian-34",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo humillacion",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20humillacion.mp3",
+      "durationMs": 142650
+    },
+    {
+      "id": "JuanDArienzoLilian-35",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo infamia",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20infamia.mp3",
+      "durationMs": 183250
+    },
+    {
+      "id": "JuanDArienzoLilian-36",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo lilian",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20lilian.mp3",
+      "durationMs": 202240
+    },
+    {
+      "id": "JuanDArienzoLilian-37",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo mirame en la cara",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20mirame%20en%20la%20cara.mp3",
+      "durationMs": 179570
+    },
+    {
+      "id": "JuanDArienzoLilian-38",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo nunca mas",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20nunca%20mas.mp3",
+      "durationMs": 184760
+    },
+    {
+      "id": "JuanDArienzoLilian-39",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo sobre el pucho",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20sobre%20el%20pucho.mp3",
+      "durationMs": 162190
+    },
+    {
+      "id": "JuanDArienzoLilian-40",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo tango brujo",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20tango%20brujo.mp3",
+      "durationMs": 167680
+    },
+    {
+      "id": "JuanDArienzoLilian-41",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo tierrita",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20tierrita.mp3",
+      "durationMs": 183930
+    },
+    {
+      "id": "JuanDArienzoLilian-42",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo tirando a matar",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20tirando%20a%20matar.mp3",
+      "durationMs": 177160
+    },
+    {
+      "id": "JuanDArienzoLilian-43",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo uno",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20uno.mp3",
+      "durationMs": 180690
+    },
+    {
+      "id": "JuanDArienzoLilian-44",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo ya lo ves",
+      "previewUrl": "https://archive.org/download/JuanDArienzoLilian/Juan%20d%20Arienzo%20%20%20%20ya%20lo%20ves.mp3",
+      "durationMs": 158300
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-45",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo a suerte y verdad",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20a%20suerte%20y%20verdad.mp3",
+      "durationMs": 151670
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-46",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo ana maria",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20ana%20maria.mp3",
+      "durationMs": 132550
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-47",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo clavel",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20clavel.mp3",
+      "durationMs": 142160
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-48",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo despues",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20despues.mp3",
+      "durationMs": 180720
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-49",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo el apache argentino",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20el%20apache%20argentino.mp3",
+      "durationMs": 189650
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-50",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo el huracan",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20el%20huracan.mp3",
+      "durationMs": 142260
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-51",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo el paisanito",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20el%20paisanito.mp3",
+      "durationMs": 138320
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-52",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo el rezongon",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20el%20rezongon.mp3",
+      "durationMs": 155610
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-53",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo el romantico",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20el%20romantico.mp3",
+      "durationMs": 185550
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-54",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo la madrugada",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20la%20madrugada.mp3",
+      "durationMs": 154780
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-55",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo la manana",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20la%20manana.mp3",
+      "durationMs": 140460
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-56",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo la mentirosa",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20la%20mentirosa.mp3",
+      "durationMs": 181790
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-57",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo las doce",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20las%20doce.mp3",
+      "durationMs": 147750
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-58",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo lilian",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20lilian.mp3",
+      "durationMs": 203810
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-59",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo no nos veremos nunca",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20no%20nos%20veremos%20nunca.mp3",
+      "durationMs": 207180
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-60",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo seamos amigos",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20seamos%20amigos.mp3",
+      "durationMs": 157470
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-61",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo venus",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20venus.mp3",
+      "durationMs": 156260
+    },
+    {
+      "id": "JuanDArienzoNoNosVeremosNunca-62",
+      "orchestraId": "darienzo",
+      "title": "Juan d Arienzo yo me llamo eloy peralto",
+      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20yo%20me%20llamo%20eloy%20peralto.mp3",
+      "durationMs": 169870
+    },
+    {
+      "id": "vals-de-los-15-anos-63",
+      "orchestraId": "darienzo",
+      "title": "vals de los 15 años",
+      "previewUrl": "https://archive.org/download/vals-de-los-15-anos/vals%20de%20los%2015%20a%C3%B1os.mp3",
+      "durationMs": 178000
+    },
+    {
+      "id": "78_chau-pinela_carlos-di-sarli-y-su-orquesta-tipica-castiglioni_gbia7000948b-64",
+      "orchestraId": "di-sarli",
+      "title": "CHAU PINELA!",
+      "previewUrl": "https://archive.org/download/78_chau-pinela_carlos-di-sarli-y-su-orquesta-tipica-castiglioni_gbia7000948b/CHAU%20PINELA!%20-%20CARLOS%20DI%20SARLI%20Y%20SU%20ORQUESTA%20TIPICA.mp3",
+      "durationMs": 161570
+    },
+    {
+      "id": "disarli.florio.destinodeflor-65",
       "orchestraId": "di-sarli",
       "title": "Destino De Flor",
       "previewUrl": "https://archive.org/download/disarli.florio.destinodeflor/disarli.florio.destinodeflor.mp3",
-      "durationMs": 175000
+      "durationMs": 205300
     },
     {
-      "id": "disarlicarasucia-2",
+      "id": "disarli.florio.porqueregresastu-66",
       "orchestraId": "di-sarli",
-      "title": "Cara Sucia",
-      "previewUrl": "https://archive.org/download/disarlicarasucia/disarlicarasucia.mp3",
-      "durationMs": 167000
+      "title": "Por Que Regresas Tu",
+      "previewUrl": "https://archive.org/download/disarli.florio.porqueregresastu/disarli.florio.porqueregresastu.mp3",
+      "durationMs": 187040
     },
     {
-      "id": "JuanDArienzoNoNosVeremosNunca-3",
-      "orchestraId": "darienzo",
-      "title": "Ana Maria",
-      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20ana%20maria.mp3",
-      "durationMs": 133000
+      "id": "disarli.florioduran.quiensinotu-67",
+      "orchestraId": "di-sarli",
+      "title": "Quien Sino Tu",
+      "previewUrl": "https://archive.org/download/disarli.florioduran.quiensinotu/disarli.florioduran.quiensinotu.mp3",
+      "durationMs": 204070
     },
     {
-      "id": "JuanDArienzoNoNosVeremosNunca-4",
-      "orchestraId": "darienzo",
-      "title": "A Suerte Y Verdad",
-      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20a%20suerte%20y%20verdad.mp3",
-      "durationMs": 152000
+      "id": "disarli.podesta.nada-68",
+      "orchestraId": "di-sarli",
+      "title": "Nada",
+      "previewUrl": "https://archive.org/download/disarli.podesta.nada/Disarli.Podesta.Nada.MP3",
+      "durationMs": 164910
     },
     {
-      "id": "JuanDArienzoNoNosVeremosNunca-5",
-      "orchestraId": "darienzo",
-      "title": "Clavel",
-      "previewUrl": "https://archive.org/download/JuanDArienzoNoNosVeremosNunca/Juan%20d%20Arienzo%20%20%20%20clavel.mp3",
-      "durationMs": 142000
+      "id": "Disarli.podesta.vamos-69",
+      "orchestraId": "di-sarli",
+      "title": "Vamos",
+      "previewUrl": "https://archive.org/download/Disarli.podesta.vamos/Disarli.podesta.vamos.mp3",
+      "durationMs": 168000
     },
     {
-      "id": "troilomilongueandoenelcuarenta-6",
-      "orchestraId": "troilo",
-      "title": "Milongueando En El 40",
-      "previewUrl": "https://archive.org/download/troilomilongueandoenelcuarenta/troilomilongueandoenelcuarenta.mp3",
-      "durationMs": 153000
+      "id": "disarli.rufino.elcieloentusojos-70",
+      "orchestraId": "di-sarli",
+      "title": "El cielo en tus ojos",
+      "previewUrl": "https://archive.org/download/disarli.rufino.elcieloentusojos/disarli.rufino.elcieloentusojos.mp3",
+      "durationMs": 158380
     },
     {
-      "id": "troilo.uno-7",
-      "orchestraId": "troilo",
-      "title": "Uno",
-      "previewUrl": "https://archive.org/download/troilo.uno/Troilo.Uno.mp3",
-      "durationMs": 211000
+      "id": "disarli.rufino.estanochedeluna-71",
+      "orchestraId": "di-sarli",
+      "title": "Esta noche de luna",
+      "previewUrl": "https://archive.org/download/disarli.rufino.estanochedeluna/disarli.rufino.estanochedeluna.mp3",
+      "durationMs": 196190
     },
     {
-      "id": "troilo.sur-8",
-      "orchestraId": "troilo",
-      "title": "Sur",
-      "previewUrl": "https://archive.org/download/troilo.sur/Troilo.Sur.mp3",
-      "durationMs": 239000
+      "id": "disarli.rufino.volverasonar-72",
+      "orchestraId": "di-sarli",
+      "title": "Volver a soñar",
+      "previewUrl": "https://archive.org/download/disarli.rufino.volverasonar/disarli.rufino.volverasonar.mp3",
+      "durationMs": 161250
     },
     {
-      "id": "pugliesegallociego-9",
+      "id": "disarliduranportenoybailarin-73",
+      "orchestraId": "di-sarli",
+      "title": "Duran - Porteño y bailarin",
+      "previewUrl": "https://archive.org/download/disarliduranportenoybailarin/DiSarli.Duran.Porte%C3%B1oybailarin.mp3",
+      "durationMs": 187140
+    },
+    {
+      "id": "RegistroSBB040HomenajeACarlosDiSarli-74",
+      "orchestraId": "di-sarli",
+      "title": "Registro SBB 040 - Homenaje a Carlos Di Sarli",
+      "previewUrl": "https://archive.org/download/RegistroSBB040HomenajeACarlosDiSarli/Registro_SBB_040_-_Homenaje_a_Carlos_Di_Sarli.mp3",
+      "durationMs": 120000
+    },
+    {
+      "id": "sextetocarlosdisarliernestofamachaupinelatango1930-75",
+      "orchestraId": "di-sarli",
+      "title": "SEXTETO CARLOS DI SARLI - ERNESTO FAMA - CHAU PINELA - TANGO - 1930",
+      "previewUrl": "https://archive.org/download/sextetocarlosdisarliernestofamachaupinelatango1930/SEXTETO%20CARLOS%20DI%20SARLI%20-%20ERNESTO%20FAMA%20-%20CHAU%20PINELA%20-%20TANGO%20-%201930.mp3",
+      "durationMs": 170110
+    },
+    {
+      "id": "01GeneriqueThemeDeCarrier-76",
+      "orchestraId": "piazzolla",
+      "title": "Generique: Theme de Carrier",
+      "previewUrl": "https://archive.org/download/01GeneriqueThemeDeCarrier/01%20-%20Generique-%20Theme%20de%20Carrier.mp3",
+      "durationMs": 145950
+    },
+    {
+      "id": "01GeneriqueThemeDeCarrier-77",
+      "orchestraId": "piazzolla",
+      "title": "Armaguedon",
+      "previewUrl": "https://archive.org/download/01GeneriqueThemeDeCarrier/02%20-%20Armaguedon.mp3",
+      "durationMs": 106190
+    },
+    {
+      "id": "01GeneriqueThemeDeCarrier-78",
+      "orchestraId": "piazzolla",
+      "title": "Seul tout Seul",
+      "previewUrl": "https://archive.org/download/01GeneriqueThemeDeCarrier/04%20-%20Seul%20tout%20Seul.mp3",
+      "durationMs": 88480
+    },
+    {
+      "id": "78_contratiempo_anibal-troilo-y-su-orquesta-astor-piazzolla_gbia7038581b-79",
+      "orchestraId": "piazzolla",
+      "title": "CONTRATIEMPO - ANIBAL TROILO y su orquesta",
+      "previewUrl": "https://archive.org/download/78_contratiempo_anibal-troilo-y-su-orquesta-astor-piazzolla_gbia7038581b/CONTRATIEMPO%20-%20ANIBAL%20TROILO%20y%20su%20orquesta.mp3",
+      "durationMs": 171000
+    },
+    {
+      "id": "adios-nonino-astor-piazzolla-80",
+      "orchestraId": "piazzolla",
+      "title": "Adios Nonino / Astor Piazzolla",
+      "previewUrl": "https://archive.org/download/adios-nonino-astor-piazzolla/%ED%8F%AC%EC%97%90%EB%B2%84%EB%AE%A4%EC%A7%81%EC%B9%B4%ED%8E%98%20%EA%B9%80%ED%98%84%EC%9A%B0%20-%20Adios%20Nonino%20_%20Astor%20Piazzolla.mp3",
+      "durationMs": 470360
+    },
+    {
+      "id": "AdiosNonino_280-81",
+      "orchestraId": "piazzolla",
+      "title": "Adios Nonino - original",
+      "previewUrl": "https://archive.org/download/AdiosNonino_280/AdiosNonino-Original.mp3",
+      "durationMs": 335120
+    },
+    {
+      "id": "astor-piazzolla-bandoneon_20230410_2115-82",
+      "orchestraId": "piazzolla",
+      "title": "Libertango",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-bandoneon_20230410_2115/01%20Libertango.mp3",
+      "durationMs": 186530
+    },
+    {
+      "id": "astor-piazzolla-bandoneon_20230410_2115-83",
+      "orchestraId": "piazzolla",
+      "title": "Amelitango",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-bandoneon_20230410_2115/02%20Amelitango.mp3",
+      "durationMs": 205480
+    },
+    {
+      "id": "astor-piazzolla-bandoneon_20230410_2115-84",
+      "orchestraId": "piazzolla",
+      "title": "L'Evasion",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-bandoneon_20230410_2115/03%20L'Evasion.mp3",
+      "durationMs": 362140
+    },
+    {
+      "id": "astor-piazzolla-bandoneon_20230410_2115-85",
+      "orchestraId": "piazzolla",
+      "title": "Buenos Aires Hora Cero",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-bandoneon_20230410_2115/04%20Buenos%20Aires%20Hora%20Cero.mp3",
+      "durationMs": 356820
+    },
+    {
+      "id": "astor-piazzolla-bandoneon_20230410_2115-86",
+      "orchestraId": "piazzolla",
+      "title": "Anos De Soledad",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-bandoneon_20230410_2115/05%20Anos%20De%20Soledad.mp3",
+      "durationMs": 284580
+    },
+    {
+      "id": "astor-piazzolla-bandoneon_20230410_2115-87",
+      "orchestraId": "piazzolla",
+      "title": "Los Pajaros Perdidos",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-bandoneon_20230410_2115/06%20Los%20Pajaros%20Perdidos.mp3",
+      "durationMs": 225230
+    },
+    {
+      "id": "astor-piazzolla-bandoneon_20230410_2115-88",
+      "orchestraId": "piazzolla",
+      "title": "Bandoneon",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-bandoneon_20230410_2115/07%20Bandoneon.mp3",
+      "durationMs": 657950
+    },
+    {
+      "id": "astor-piazzolla-bandoneon_20230410_2115-89",
+      "orchestraId": "piazzolla",
+      "title": "Zita",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-bandoneon_20230410_2115/08%20Zita.mp3",
+      "durationMs": 375660
+    },
+    {
+      "id": "astor-piazzolla-bandoneon_20230410_2115-90",
+      "orchestraId": "piazzolla",
+      "title": "Adios Nonino",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-bandoneon_20230410_2115/09%20Adios%20Nonino.mp3",
+      "durationMs": 461650
+    },
+    {
+      "id": "astor-piazzolla-bandoneon_20230410_2115-91",
+      "orchestraId": "piazzolla",
+      "title": "Balada Para Mi Muerte",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-bandoneon_20230410_2115/10%20Balada%20Para%20Mi%20Muerte.mp3",
+      "durationMs": 302920
+    },
+    {
+      "id": "astor-piazzolla-bandoneon_20230410_2115-92",
+      "orchestraId": "piazzolla",
+      "title": "Balada Para Un Loco",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-bandoneon_20230410_2115/11%20Balada%20Para%20Un%20Loco.mp3",
+      "durationMs": 304120
+    },
+    {
+      "id": "astor-piazzolla-gerry-mulligan-reunion-cumbre-1974-93",
+      "orchestraId": "piazzolla",
+      "title": "01- Hace veinte años",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-gerry-mulligan-reunion-cumbre-1974/Astor%20Piazzolla%20%26%20Gerry%20Mulligan%20-%20Reuni%C3%B3n%20Cumbre%20(1974)%20%5BFlac%5D%20-Trova%20%2BFrank%20Wallace423%2F01-%20Hace%20veinte%20a%C3%B1os.mp3",
+      "durationMs": 390000
+    },
+    {
+      "id": "astor-piazzolla-gerry-mulligan-reunion-cumbre-1974-94",
+      "orchestraId": "piazzolla",
+      "title": "02- Cierra tus ojos y escucha",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-gerry-mulligan-reunion-cumbre-1974/Astor%20Piazzolla%20%26%20Gerry%20Mulligan%20-%20Reuni%C3%B3n%20Cumbre%20(1974)%20%5BFlac%5D%20-Trova%20%2BFrank%20Wallace423%2F02-%20Cierra%20tus%20ojos%20y%20escucha.mp3",
+      "durationMs": 277000
+    },
+    {
+      "id": "astor-piazzolla-gerry-mulligan-reunion-cumbre-1974-95",
+      "orchestraId": "piazzolla",
+      "title": "03- Años de soledad",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-gerry-mulligan-reunion-cumbre-1974/Astor%20Piazzolla%20%26%20Gerry%20Mulligan%20-%20Reuni%C3%B3n%20Cumbre%20(1974)%20%5BFlac%5D%20-Trova%20%2BFrank%20Wallace423%2F03-%20A%C3%B1os%20de%20soledad.mp3",
+      "durationMs": 252000
+    },
+    {
+      "id": "astor-piazzolla-gerry-mulligan-reunion-cumbre-1974-96",
+      "orchestraId": "piazzolla",
+      "title": "04- Deus xango",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-gerry-mulligan-reunion-cumbre-1974/Astor%20Piazzolla%20%26%20Gerry%20Mulligan%20-%20Reuni%C3%B3n%20Cumbre%20(1974)%20%5BFlac%5D%20-Trova%20%2BFrank%20Wallace423%2F04-%20Deus%20xango.mp3",
+      "durationMs": 229000
+    },
+    {
+      "id": "astor-piazzolla-gerry-mulligan-reunion-cumbre-1974-97",
+      "orchestraId": "piazzolla",
+      "title": "05- Veinte años después",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-gerry-mulligan-reunion-cumbre-1974/Astor%20Piazzolla%20%26%20Gerry%20Mulligan%20-%20Reuni%C3%B3n%20Cumbre%20(1974)%20%5BFlac%5D%20-Trova%20%2BFrank%20Wallace423%2F05-%20Veinte%20a%C3%B1os%20despu%C3%A9s.mp3",
+      "durationMs": 253000
+    },
+    {
+      "id": "astor-piazzolla-gerry-mulligan-reunion-cumbre-1974-98",
+      "orchestraId": "piazzolla",
+      "title": "06- Aire de Buenos Aires",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-gerry-mulligan-reunion-cumbre-1974/Astor%20Piazzolla%20%26%20Gerry%20Mulligan%20-%20Reuni%C3%B3n%20Cumbre%20(1974)%20%5BFlac%5D%20-Trova%20%2BFrank%20Wallace423%2F06-%20Aire%20de%20Buenos%20Aires.mp3",
+      "durationMs": 279000
+    },
+    {
+      "id": "astor-piazzolla-gerry-mulligan-reunion-cumbre-1974-99",
+      "orchestraId": "piazzolla",
+      "title": "07- Reminiscencia",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-gerry-mulligan-reunion-cumbre-1974/Astor%20Piazzolla%20%26%20Gerry%20Mulligan%20-%20Reuni%C3%B3n%20Cumbre%20(1974)%20%5BFlac%5D%20-Trova%20%2BFrank%20Wallace423%2F07-%20Reminiscencia.mp3",
+      "durationMs": 395000
+    },
+    {
+      "id": "astor-piazzolla-gerry-mulligan-reunion-cumbre-1974-100",
+      "orchestraId": "piazzolla",
+      "title": "08- Reunión cumbre",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-gerry-mulligan-reunion-cumbre-1974/Astor%20Piazzolla%20%26%20Gerry%20Mulligan%20-%20Reuni%C3%B3n%20Cumbre%20(1974)%20%5BFlac%5D%20-Trova%20%2BFrank%20Wallace423%2F08-%20Reuni%C3%B3n%20cumbre.mp3",
+      "durationMs": 220000
+    },
+    {
+      "id": "astor-piazzolla-libertango-1974-101",
+      "orchestraId": "piazzolla",
+      "title": "Libertango",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-libertango-1974/01%20Libertango.mp3",
+      "durationMs": 169120
+    },
+    {
+      "id": "astor-piazzolla-libertango-1974-102",
+      "orchestraId": "piazzolla",
+      "title": "Meditango",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-libertango-1974/02%20Meditango.mp3",
+      "durationMs": 340820
+    },
+    {
+      "id": "astor-piazzolla-libertango-1974-103",
+      "orchestraId": "piazzolla",
+      "title": "Undertango",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-libertango-1974/03%20Undertango.mp3",
+      "durationMs": 252260
+    },
+    {
+      "id": "astor-piazzolla-libertango-1974-104",
+      "orchestraId": "piazzolla",
+      "title": "Adios Nonino",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-libertango-1974/04%20Adios%20Nonino.mp3",
+      "durationMs": 340350
+    },
+    {
+      "id": "astor-piazzolla-libertango-1974-105",
+      "orchestraId": "piazzolla",
+      "title": "Violentango",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-libertango-1974/05%20Violentango.mp3",
+      "durationMs": 215590
+    },
+    {
+      "id": "astor-piazzolla-libertango-1974-106",
+      "orchestraId": "piazzolla",
+      "title": "Novitango",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-libertango-1974/06%20Novitango.mp3",
+      "durationMs": 215750
+    },
+    {
+      "id": "astor-piazzolla-libertango-1974-107",
+      "orchestraId": "piazzolla",
+      "title": "Amelitango",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-libertango-1974/07%20Amelitango.mp3",
+      "durationMs": 240430
+    },
+    {
+      "id": "astor-piazzolla-libertango-1974-108",
+      "orchestraId": "piazzolla",
+      "title": "Tristango",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-libertango-1974/08%20Tristango.mp3",
+      "durationMs": 418900
+    },
+    {
+      "id": "astor-piazzolla-tango-contemporaneo-1963-109",
+      "orchestraId": "piazzolla",
+      "title": "Lo Que Vendrá",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-tango-contemporaneo-1963/Astor%20Piazzolla%20-%20Tango%20Contemporaneo%20(1963)%20%5BFlac%5D%20-CBS%20%2BFrank%20Wallace423%2F01%20-%20Lo%20Que%20Vendr%C3%A1.mp3",
+      "durationMs": 228000
+    },
+    {
+      "id": "astor-piazzolla-tango-contemporaneo-1963-110",
+      "orchestraId": "piazzolla",
+      "title": "Divagacion",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-tango-contemporaneo-1963/Astor%20Piazzolla%20-%20Tango%20Contemporaneo%20(1963)%20%5BFlac%5D%20-CBS%20%2BFrank%20Wallace423%2F02%20-%20Divagaci%C3%B3n.mp3",
+      "durationMs": 299000
+    },
+    {
+      "id": "astor-piazzolla-tango-contemporaneo-1963-111",
+      "orchestraId": "piazzolla",
+      "title": "Introducción a Héroes y Tumbas (con Ernesto Sábato)",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-tango-contemporaneo-1963/Astor%20Piazzolla%20-%20Tango%20Contemporaneo%20(1963)%20%5BFlac%5D%20-CBS%20%2BFrank%20Wallace423%2F03%20-%20Introducci%C3%B3n%20a%20H%C3%A9roes%20y%20Tumbas%20(con%20Ernesto%20S%C3%A1bato).mp3",
+      "durationMs": 415000
+    },
+    {
+      "id": "astor-piazzolla-tango-contemporaneo-1963-112",
+      "orchestraId": "piazzolla",
+      "title": "Noposepe",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-tango-contemporaneo-1963/Astor%20Piazzolla%20-%20Tango%20Contemporaneo%20(1963)%20%5BFlac%5D%20-CBS%20%2BFrank%20Wallace423%2F04%20-%20Noposepe.mp3",
+      "durationMs": 253000
+    },
+    {
+      "id": "astor-piazzolla-tango-contemporaneo-1963-113",
+      "orchestraId": "piazzolla",
+      "title": "Ciudad Triste",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-tango-contemporaneo-1963/Astor%20Piazzolla%20-%20Tango%20Contemporaneo%20(1963)%20%5BFlac%5D%20-CBS%20%2BFrank%20Wallace423%2F05%20-%20Ciudad%20Triste.mp3",
+      "durationMs": 242000
+    },
+    {
+      "id": "astor-piazzolla-tango-contemporaneo-1963-114",
+      "orchestraId": "piazzolla",
+      "title": "Sideral",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-tango-contemporaneo-1963/Astor%20Piazzolla%20-%20Tango%20Contemporaneo%20(1963)%20%5BFlac%5D%20-CBS%20%2BFrank%20Wallace423%2F06%20-%20Sideral.mp3",
+      "durationMs": 230000
+    },
+    {
+      "id": "astor-piazzolla-tango-contemporaneo-1963-115",
+      "orchestraId": "piazzolla",
+      "title": "Requiem para un Malandra (con Alfredo Alcón)",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-tango-contemporaneo-1963/Astor%20Piazzolla%20-%20Tango%20Contemporaneo%20(1963)%20%5BFlac%5D%20-CBS%20%2BFrank%20Wallace423%2F07%20-%20Requiem%20para%20un%20Malandra%20(con%20Alfredo%20Alc%C3%B3n).mp3",
+      "durationMs": 395000
+    },
+    {
+      "id": "astor-piazzolla-tango-contemporaneo-1963-116",
+      "orchestraId": "piazzolla",
+      "title": "Recuerdos de Bohemia _ Milonguita (con Héctor de Rosas)",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-tango-contemporaneo-1963/Astor%20Piazzolla%20-%20Tango%20Contemporaneo%20(1963)%20%5BFlac%5D%20-CBS%20%2BFrank%20Wallace423%2F08%20-%20Recuerdos%20de%20Bohemia%20_%20Milonguita%20(con%20H%C3%A9ctor%20de%20Rosas).mp3",
+      "durationMs": 229000
+    },
+    {
+      "id": "astor-piazzolla-y-su-conjunto-electronico-olympia-77-1977-117",
+      "orchestraId": "piazzolla",
+      "title": "Libertango",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-y-su-conjunto-electronico-olympia-77-1977/Astor%20Piazzolla%20y%20Su%20Conjunto%20Electr%C3%B3nico%20-%20Olympia%2077%20(1977)%20%5BFlac%5D%20-Polydor%20%2BFrank%20Wallace423%2F01.%20Libertango.mp3",
+      "durationMs": 495000
+    },
+    {
+      "id": "astor-piazzolla-y-su-conjunto-electronico-olympia-77-1977-118",
+      "orchestraId": "piazzolla",
+      "title": "Meditango",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-y-su-conjunto-electronico-olympia-77-1977/Astor%20Piazzolla%20y%20Su%20Conjunto%20Electr%C3%B3nico%20-%20Olympia%2077%20(1977)%20%5BFlac%5D%20-Polydor%20%2BFrank%20Wallace423%2F02.%20Meditango.mp3",
+      "durationMs": 565000
+    },
+    {
+      "id": "astor-piazzolla-y-su-conjunto-electronico-olympia-77-1977-119",
+      "orchestraId": "piazzolla",
+      "title": "Zita",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-y-su-conjunto-electronico-olympia-77-1977/Astor%20Piazzolla%20y%20Su%20Conjunto%20Electr%C3%B3nico%20-%20Olympia%2077%20(1977)%20%5BFlac%5D%20-Polydor%20%2BFrank%20Wallace423%2F03.%20Zita.mp3",
+      "durationMs": 389000
+    },
+    {
+      "id": "astor-piazzolla-y-su-conjunto-electronico-olympia-77-1977-120",
+      "orchestraId": "piazzolla",
+      "title": "Adios Nonino",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-y-su-conjunto-electronico-olympia-77-1977/Astor%20Piazzolla%20y%20Su%20Conjunto%20Electr%C3%B3nico%20-%20Olympia%2077%20(1977)%20%5BFlac%5D%20-Polydor%20%2BFrank%20Wallace423%2F04.%20Adios%20Nonino.mp3",
+      "durationMs": 665000
+    },
+    {
+      "id": "astor-piazzolla-y-su-conjunto-electronico-olympia-77-1977-121",
+      "orchestraId": "piazzolla",
+      "title": "Violentango",
+      "previewUrl": "https://archive.org/download/astor-piazzolla-y-su-conjunto-electronico-olympia-77-1977/Astor%20Piazzolla%20y%20Su%20Conjunto%20Electr%C3%B3nico%20-%20Olympia%2077%20(1977)%20%5BFlac%5D%20-Polydor%20%2BFrank%20Wallace423%2F05.%20Violentango.mp3",
+      "durationMs": 236000
+    },
+    {
+      "id": "AstorPiazzollaadiosNoninoTangoNuevo-122",
+      "orchestraId": "piazzolla",
+      "title": "Adios Nonino.Tango nuevo",
+      "previewUrl": "https://archive.org/download/AstorPiazzollaadiosNoninoTangoNuevo/AdiosNonino.tangoNuevo.mp3",
+      "durationMs": 335140
+    },
+    {
+      "id": "AstorPiazzollaBragatissimo-123",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla - Bragatissimo",
+      "previewUrl": "https://archive.org/download/AstorPiazzollaBragatissimo/Astor%20Piazzolla%20-%20Bragatissimo.mp3",
+      "durationMs": 221990
+    },
+    {
+      "id": "AstorPiazzollaLibertango-124",
+      "orchestraId": "piazzolla",
+      "title": "1974 - Libertango",
+      "previewUrl": "https://archive.org/download/AstorPiazzollaLibertango/051974Libertango.mp3",
+      "durationMs": 162300
+    },
+    {
+      "id": "AstorPiazzollaPianDanaAndreeaNigrim-125",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla, Chau Paris, pian Dana A. Nigrim",
+      "previewUrl": "https://archive.org/download/AstorPiazzollaPianDanaAndreeaNigrim/AstorPiazzollaChauParisPianDanaA.Nigrim.mp3",
+      "durationMs": 216000
+    },
+    {
+      "id": "AstorPiazzollaPianDanaAndreeaNigrim-126",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla, Contrabanjeado, pian Dana A. Nigrim",
+      "previewUrl": "https://archive.org/download/AstorPiazzollaPianDanaAndreeaNigrim/AstorPiazzollaContrabanjeadoPianDanaA.Nigrim.mp3",
+      "durationMs": 170000
+    },
+    {
+      "id": "AstorPiazzollaSoledad-127",
+      "orchestraId": "piazzolla",
+      "title": "1968 - Soledad",
+      "previewUrl": "https://archive.org/download/AstorPiazzollaSoledad/021968Soledad.mp3",
+      "durationMs": 414930
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-128",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1990) Verano Porteño/CD/mp3/01 - Verano Porteño",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1990)%20Verano%20Porte%C3%B1o%2FCD%2Fmp3%2F01%20-%20Verano%20Porte%C3%B1o.mp3",
+      "durationMs": 566620
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-129",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1990) Verano Porteño/CD/mp3/02 - Baires '72",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1990)%20Verano%20Porte%C3%B1o%2FCD%2Fmp3%2F02%20-%20Baires%20'72.mp3",
+      "durationMs": 349990
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-130",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1990) Verano Porteño/CD/mp3/03 - Buenos Aires Hora Cero",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1990)%20Verano%20Porte%C3%B1o%2FCD%2Fmp3%2F03%20-%20Buenos%20Aires%20Hora%20Cero.mp3",
+      "durationMs": 350330
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-131",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1990) Verano Porteño/CD/mp3/04 - Vardarito",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1990)%20Verano%20Porte%C3%B1o%2FCD%2Fmp3%2F04%20-%20Vardarito.mp3",
+      "durationMs": 393900
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-132",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1990) Verano Porteño/CD/mp3/05 - Oda Para Un Hippie",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1990)%20Verano%20Porte%C3%B1o%2FCD%2Fmp3%2F05%20-%20Oda%20Para%20Un%20Hippie.mp3",
+      "durationMs": 345840
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-133",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1990) Verano Porteño/CD/mp3/06 - Onda Nueve",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1990)%20Verano%20Porte%C3%B1o%2FCD%2Fmp3%2F06%20-%20Onda%20Nueve.mp3",
+      "durationMs": 389770
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-134",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1990) Verano Porteño/CD/mp3/07 - Preludio 9",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1990)%20Verano%20Porte%C3%B1o%2FCD%2Fmp3%2F07%20-%20Preludio%209.mp3",
+      "durationMs": 449250
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-135",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1990) Verano Porteño/CD/mp3/08 - Divertimento 9",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1990)%20Verano%20Porte%C3%B1o%2FCD%2Fmp3%2F08%20-%20Divertimento%209.mp3",
+      "durationMs": 340380
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-136",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1990) Verano Porteño/CD/mp3/09 - Fuga 9",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1990)%20Verano%20Porte%C3%B1o%2FCD%2Fmp3%2F09%20-%20Fuga%209.mp3",
+      "durationMs": 180660
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-137",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Adiós Nonino/CD DP 155202 MH 10049-2/mp3/01 - Adiós Nonino",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Adi%C3%B3s%20Nonino%2FCD_DP%20155202%20_%20MH%2010049-2%2Fmp3%2F01%20-%20Adi%C3%B3s%20Nonino.mp3",
+      "durationMs": 296050
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-138",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Adiós Nonino/CD DP 155202 MH 10049-2/mp3/02 - La Cachila",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Adi%C3%B3s%20Nonino%2FCD_DP%20155202%20_%20MH%2010049-2%2Fmp3%2F02%20-%20La%20Cachila.mp3",
+      "durationMs": 181000
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-139",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Adiós Nonino/CD DP 155202 MH 10049-2/mp3/03 - Noche De Amor",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Adi%C3%B3s%20Nonino%2FCD_DP%20155202%20_%20MH%2010049-2%2Fmp3%2F03%20-%20Noche%20De%20Amor.mp3",
+      "durationMs": 171000
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-140",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Adiós Nonino/CD DP 155202 MH 10049-2/mp3/04 - Lo Que Vendrá",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Adi%C3%B3s%20Nonino%2FCD_DP%20155202%20_%20MH%2010049-2%2Fmp3%2F04%20-%20Lo%20Que%20Vendr%C3%A1.mp3",
+      "durationMs": 206110
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-141",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Adiós Nonino/CD DP 155202 MH 10049-2/mp3/05 - Triunfal",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Adi%C3%B3s%20Nonino%2FCD_DP%20155202%20_%20MH%2010049-2%2Fmp3%2F05%20-%20Triunfal.mp3",
+      "durationMs": 201950
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-142",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Adiós Nonino/CD DP 155202 MH 10049-2/mp3/06 - Miedo",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Adi%C3%B3s%20Nonino%2FCD_DP%20155202%20_%20MH%2010049-2%2Fmp3%2F06%20-%20Miedo.mp3",
+      "durationMs": 249310
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-143",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Adiós Nonino/CD DP 155202 MH 10049-2/mp3/07 - Sensiblero",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Adi%C3%B3s%20Nonino%2FCD_DP%20155202%20_%20MH%2010049-2%2Fmp3%2F07%20-%20Sensiblero.mp3",
+      "durationMs": 263080
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-144",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Adiós Nonino/CD DP 155202 MH 10049-2/mp3/08 - Tres Minutos Con La Realidad",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Adi%C3%B3s%20Nonino%2FCD_DP%20155202%20_%20MH%2010049-2%2Fmp3%2F08%20-%20Tres%20Minutos%20Con%20La%20Realidad.mp3",
+      "durationMs": 195160
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-145",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Adiós Nonino/CD DP 155202 MH 10049-2/mp3/09 - Yo Soy El Negro",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Adi%C3%B3s%20Nonino%2FCD_DP%20155202%20_%20MH%2010049-2%2Fmp3%2F09%20-%20Yo%20Soy%20El%20Negro.mp3",
+      "durationMs": 244190
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-146",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Adiós Nonino/CD DP 155202 MH 10049-2/mp3/10 - Bando",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Adi%C3%B3s%20Nonino%2FCD_DP%20155202%20_%20MH%2010049-2%2Fmp3%2F10%20-%20Bando.mp3",
+      "durationMs": 190880
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-147",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Adiós Nonino/CD DP 155202 MH 10049-2/mp3/11 - La Tarde Del Adiós",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Adi%C3%B3s%20Nonino%2FCD_DP%20155202%20_%20MH%2010049-2%2Fmp3%2F11%20-%20La%20Tarde%20Del%20Adi%C3%B3s.mp3",
+      "durationMs": 328570
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-148",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Adiós Nonino/CD DP 155202 MH 10049-2/mp3/12 - Contrastes",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Adi%C3%B3s%20Nonino%2FCD_DP%20155202%20_%20MH%2010049-2%2Fmp3%2F12%20-%20Contrastes.mp3",
+      "durationMs": 164130
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-149",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Piazzollissimo 1979-1983/CD JAM 9105-2/mp3/01 - Biyuya",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Piazzollissimo%201979-1983%2FCD_JAM%209105-2%2Fmp3%2F01%20-%20Biyuya.mp3",
+      "durationMs": 364800
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-150",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Piazzollissimo 1979-1983/CD JAM 9105-2/mp3/02 - Movimiento Continuo",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Piazzollissimo%201979-1983%2FCD_JAM%209105-2%2Fmp3%2F02%20-%20Movimiento%20Continuo.mp3",
+      "durationMs": 236620
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-151",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Piazzollissimo 1979-1983/CD JAM 9105-2/mp3/03 - Verano Del 79",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Piazzollissimo%201979-1983%2FCD_JAM%209105-2%2Fmp3%2F03%20-%20Verano%20Del%2079.mp3",
+      "durationMs": 400490
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-152",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Piazzollissimo 1979-1983/CD JAM 9105-2/mp3/04 - Chin Chin",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Piazzollissimo%201979-1983%2FCD_JAM%209105-2%2Fmp3%2F04%20-%20Chin%20Chin.mp3",
+      "durationMs": 296520
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-153",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Piazzollissimo 1979-1983/CD JAM 9105-2/mp3/05 - Escualo!",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Piazzollissimo%201979-1983%2FCD_JAM%209105-2%2Fmp3%2F05%20-%20Escualo!.mp3",
+      "durationMs": 219040
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-154",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Piazzollissimo 1979-1983/CD JAM 9105-2/mp3/06 - Marejadilla",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Piazzollissimo%201979-1983%2FCD_JAM%209105-2%2Fmp3%2F06%20-%20Marejadilla.mp3",
+      "durationMs": 482800
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-155",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Piazzollissimo 1979-1983/CD JAM 9105-2/mp3/07 - Sleeping",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Piazzollissimo%201979-1983%2FCD_JAM%209105-2%2Fmp3%2F07%20-%20Sleeping.mp3",
+      "durationMs": 301240
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-156",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Piazzollissimo 1979-1983/CD JAM 9105-2/mp3/08 - Midnight",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Piazzollissimo%201979-1983%2FCD_JAM%209105-2%2Fmp3%2F08%20-%20Midnight.mp3",
+      "durationMs": 327600
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-157",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Piazzollissimo 1979-1983/CD JAM 9105-2/mp3/09 - Woe",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Piazzollissimo%201979-1983%2FCD_JAM%209105-2%2Fmp3%2F09%20-%20Woe.mp3",
+      "durationMs": 180350
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-158",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Piazzollissimo 1979-1983/CD JAM 9105-2/mp3/10 - Look Out",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Piazzollissimo%201979-1983%2FCD_JAM%209105-2%2Fmp3%2F10%20-%20Look%20Out.mp3",
+      "durationMs": 270890
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-159",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Piazzollissimo 1979-1983/CD JAM 9105-2/mp3/11 - Desire",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Piazzollissimo%201979-1983%2FCD_JAM%209105-2%2Fmp3%2F11%20-%20Desire.mp3",
+      "durationMs": 341030
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-160",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1991) Piazzollissimo 1979-1983/CD JAM 9105-2/mp3/13 - Woe Pass Away",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Piazzollissimo%201979-1983%2FCD_JAM%209105-2%2Fmp3%2F13%20-%20Woe%20Pass%20Away.mp3",
+      "durationMs": 357980
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-161",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1994) The Central Park Concert/CD JD107/mp3/01 - Verano Porteño",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1994)%20The%20Central%20Park%20Concert%2FCD_JD107%2Fmp3%2F01%20-%20Verano%20Porte%C3%B1o.mp3",
+      "durationMs": 413340
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-162",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1994) The Central Park Concert/CD JD107/mp3/02 - Lunfardo",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1994)%20The%20Central%20Park%20Concert%2FCD_JD107%2Fmp3%2F02%20-%20Lunfardo.mp3",
+      "durationMs": 355530
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-163",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1994) The Central Park Concert/CD JD107/mp3/03 - Milonga Del Ángel",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1994)%20The%20Central%20Park%20Concert%2FCD_JD107%2Fmp3%2F03%20-%20Milonga%20Del%20%C3%81ngel.mp3",
+      "durationMs": 392800
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-164",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1994) The Central Park Concert/CD JD107/mp3/04 - Muerte Del Ángel",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1994)%20The%20Central%20Park%20Concert%2FCD_JD107%2Fmp3%2F04%20-%20Muerte%20Del%20%C3%81ngel.mp3",
+      "durationMs": 199310
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-165",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1994) The Central Park Concert/CD JD107/mp3/05 - Astor's Speech",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1994)%20The%20Central%20Park%20Concert%2FCD_JD107%2Fmp3%2F05%20-%20Astor's%20Speech.mp3",
+      "durationMs": 140200
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-166",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1994) The Central Park Concert/CD JD107/mp3/06 - La Camorra",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1994)%20The%20Central%20Park%20Concert%2FCD_JD107%2Fmp3%2F06%20-%20La%20Camorra.mp3",
+      "durationMs": 266840
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-167",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1994) The Central Park Concert/CD JD107/mp3/07 - Mumuki",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1994)%20The%20Central%20Park%20Concert%2FCD_JD107%2Fmp3%2F07%20-%20Mumuki.mp3",
+      "durationMs": 548490
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-168",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1994) The Central Park Concert/CD JD107/mp3/08 - Adiós Nonino",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1994)%20The%20Central%20Park%20Concert%2FCD_JD107%2Fmp3%2F08%20-%20Adi%C3%B3s%20Nonino.mp3",
+      "durationMs": 492510
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-169",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1994) The Central Park Concert/CD JD107/mp3/09 - Contra Bajissmo",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1994)%20The%20Central%20Park%20Concert%2FCD_JD107%2Fmp3%2F09%20-%20Contra%20Bajissmo.mp3",
+      "durationMs": 610380
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-170",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1994) The Central Park Concert/CD JD107/mp3/10 - Michelangelo",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1994)%20The%20Central%20Park%20Concert%2FCD_JD107%2Fmp3%2F10%20-%20Michelangelo.mp3",
+      "durationMs": 203830
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-171",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1994) The Central Park Concert/CD JD107/mp3/11 - Concierto Para Quinteto",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1994)%20The%20Central%20Park%20Concert%2FCD_JD107%2Fmp3%2F11%20-%20Concierto%20Para%20Quinteto.mp3",
+      "durationMs": 586240
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-172",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(1996) Os Grandes Sucessos De Astor Piazzolla/CD 2-464394/mp3/04 - Balada Para Un Loco",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1996)%20Os%20Grandes%20Sucessos%20De%20Astor%20Piazzolla%2FCD_2-464394%2Fmp3%2F04%20-%20Balada%20Para%20Un%20Loco.mp3",
+      "durationMs": 277550
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-173",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/01 - Astor Piazzolla - Prelude (Metier Remix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F01%20-%20Astor%20Piazzolla%20-%20Prelude%20(Metier%20Remix).mp3",
+      "durationMs": 97750
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-174",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/02 - Astor Piazzolla - Vuelvo Al Sur (Koop Remix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F02%20-%20Astor%20Piazzolla%20-%20Vuelvo%20Al%20Sur%20(Koop%20Remix).mp3",
+      "durationMs": 340400
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-175",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/03 - Hi Perspective - El Tango (Hi Perspective Remix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F03%20-%20Hi%20Perspective%20-%20El%20Tango%20(Hi%20Perspective%20Remix).mp3",
+      "durationMs": 340270
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-176",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/04 - Astor Piazzolla - Luna (Full Moon Remix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F04%20-%20Astor%20Piazzolla%20-%20Luna%20(Full%20Moon%20Remix).mp3",
+      "durationMs": 336090
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-177",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/05 - Astor Piazzolla - Prelude Fugue VMM (Zeb V Piazzolla Mix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F05%20-%20Astor%20Piazzolla%20-%20Prelude%20Fugue%20VMM%20(Zeb%20V%20Piazzolla%20Mix).mp3",
+      "durationMs": 387790
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-178",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/06 - 4hero - El Viaje (4 Hero Remix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F06%20-%204hero%20-%20El%20Viaje%20(4%20Hero%20Remix).mp3",
+      "durationMs": 322400
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-179",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/07 - Two Banks Of Four - Milonga Del Ángel (2 Banks Of 4 Remix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F07%20-%20Two%20Banks%20Of%20Four%20-%20Milonga%20Del%20%C3%81ngel%20(2%20Banks%20Of%204%20Remix).mp3",
+      "durationMs": 398030
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-180",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/08 - Astor Piazzolla - Milonga (Osunlade Remix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F08%20-%20Astor%20Piazzolla%20-%20Milonga%20(Osunlade%20Remix).mp3",
+      "durationMs": 296410
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-181",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/09 - Astor Piazzolla - Revirado (John Beltran Remix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F09%20-%20Astor%20Piazzolla%20-%20Revirado%20(John%20Beltran%20Remix).mp3",
+      "durationMs": 285910
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-182",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/10 - Astor Piazzolla - Tanguedia III (Nickodemus And Osiris Remix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F10%20-%20Astor%20Piazzolla%20-%20Tanguedia%20III%20(Nickodemus%20And%20Osiris%20Remix).mp3",
+      "durationMs": 313000
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-183",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/11 - Astor Piazzolla - Verano Porteño (Nuspirit Helsinki Remix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F11%20-%20Astor%20Piazzolla%20-%20Verano%20Porte%C3%B1o%20(Nuspirit%20Helsinki%20Remix).mp3",
+      "durationMs": 425850
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-184",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/12 - Fantasista - Resurrección Del Angel (Libertango Mix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F12%20-%20Fantasista%20-%20Resurrecci%C3%B3n%20Del%20Angel%20(Libertango%20Mix).mp3",
+      "durationMs": 343140
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-185",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/13 - John Arnold - Calambre (John Arnold Remix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F13%20-%20John%20Arnold%20-%20Calambre%20(John%20Arnold%20Remix).mp3",
+      "durationMs": 184740
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-186",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/14 - Astor Piazzolla - Ballada Para Mi Muerte (Projections Remix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F14%20-%20Astor%20Piazzolla%20-%20Ballada%20Para%20Mi%20Muerte%20(Projections%20Remix).mp3",
+      "durationMs": 320130
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-187",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/(2003) Astor Piazzolla Remixed/CD M2-36019/mp3/15 - Astor Piazzolla - Duo De Amor (Ricochet Remix)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(2003)%20Astor%20Piazzolla%20Remixed%2FCD_M2-36019%2Fmp3%2F15%20-%20Astor%20Piazzolla%20-%20Duo%20De%20Amor%20(Ricochet%20Remix).mp3",
+      "durationMs": 346410
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-188",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Astor Piazzolla & Gary Burton/Discografía/(1987) The New Tango/CD 2292-55069-2/mp3/01 - Milonga Is Coming",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FAstor%20Piazzolla%20%26%20Gary%20Burton%2FDiscograf%C3%ADa%2F(1987)%20The%20New%20Tango%2FCD_2292-55069-2%2Fmp3%2F01%20-%20Milonga%20Is%20Coming.mp3",
+      "durationMs": 726940
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-189",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Astor Piazzolla & Gary Burton/Discografía/(1987) The New Tango/CD 2292-55069-2/mp3/02 - Vibraphonissimo",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FAstor%20Piazzolla%20%26%20Gary%20Burton%2FDiscograf%C3%ADa%2F(1987)%20The%20New%20Tango%2FCD_2292-55069-2%2Fmp3%2F02%20-%20Vibraphonissimo.mp3",
+      "durationMs": 399910
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-190",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Astor Piazzolla & Gary Burton/Discografía/(1987) The New Tango/CD 2292-55069-2/mp3/03 - Little Italy 1930",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FAstor%20Piazzolla%20%26%20Gary%20Burton%2FDiscograf%C3%ADa%2F(1987)%20The%20New%20Tango%2FCD_2292-55069-2%2Fmp3%2F03%20-%20Little%20Italy%201930.mp3",
+      "durationMs": 513570.00000000006
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-191",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Astor Piazzolla & Gary Burton/Discografía/(1987) The New Tango/CD 2292-55069-2/mp3/04 - Nuevo Tango",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FAstor%20Piazzolla%20%26%20Gary%20Burton%2FDiscograf%C3%ADa%2F(1987)%20The%20New%20Tango%2FCD_2292-55069-2%2Fmp3%2F04%20-%20Nuevo%20Tango.mp3",
+      "durationMs": 339150
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-192",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Astor Piazzolla & Gary Burton/Discografía/(1987) The New Tango/CD 2292-55069-2/mp3/05 - Laura's Dream",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FAstor%20Piazzolla%20%26%20Gary%20Burton%2FDiscograf%C3%ADa%2F(1987)%20The%20New%20Tango%2FCD_2292-55069-2%2Fmp3%2F05%20-%20Laura's%20Dream.mp3",
+      "durationMs": 716990
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-193",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Astor Piazzolla & Gary Burton/Discografía/(1987) The New Tango/CD 2292-55069-2/mp3/06 - Operation Tango",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FAstor%20Piazzolla%20%26%20Gary%20Burton%2FDiscograf%C3%ADa%2F(1987)%20The%20New%20Tango%2FCD_2292-55069-2%2Fmp3%2F06%20-%20Operation%20Tango.mp3",
+      "durationMs": 597630
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-194",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Astor Piazzolla & Gary Burton/Discografía/(1987) The New Tango/CD 2292-55069-2/mp3/07 - La Muerta Del Angel",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FAstor%20Piazzolla%20%26%20Gary%20Burton%2FDiscograf%C3%ADa%2F(1987)%20The%20New%20Tango%2FCD_2292-55069-2%2Fmp3%2F07%20-%20La%20Muerta%20Del%20Angel.mp3",
+      "durationMs": 239990
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-195",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Astor Piazzolla & Roberto Goyeneche/Discografía/(1969) Balada Para Un Loco/7 Vinyl 31A 1605/mp3/01 - Balada Para Un Loco",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FAstor%20Piazzolla%20%26%20Roberto%20Goyeneche%2FDiscograf%C3%ADa%2F(1969)%20Balada%20Para%20Un%20Loco%2F7_%20Vinyl_31A%201605%2Fmp3%2F01%20-%20Balada%20Para%20Un%20Loco.mp3",
+      "durationMs": 268930
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-196",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Astor Piazzolla & Roberto Goyeneche/Discografía/(1982) En Vivo Teatro Regina/mp3/07 - Balada Para Un Loco",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FAstor%20Piazzolla%20%26%20Roberto%20Goyeneche%2FDiscograf%C3%ADa%2F(1982)%20En%20Vivo_%20Teatro%20Regina%2Fmp3%2F07%20-%20Balada%20Para%20Un%20Loco.mp3",
+      "durationMs": 403850
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-197",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Gerry Mulligan & Astor Piazzolla/Discografía/(1992) Summit/CD CDOR 8588/mp3/01 - 20 Years Ago",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FGerry%20Mulligan%20%26%20Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1992)%20Summit%2FCD_CDOR%208588%2Fmp3%2F01%20-%2020%20Years%20Ago.mp3",
+      "durationMs": 388490
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-198",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Gerry Mulligan & Astor Piazzolla/Discografía/(1992) Summit/CD CDOR 8588/mp3/02 - Close Your Eyes And Listen",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FGerry%20Mulligan%20%26%20Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1992)%20Summit%2FCD_CDOR%208588%2Fmp3%2F02%20-%20Close%20Your%20Eyes%20And%20Listen.mp3",
+      "durationMs": 275750
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-199",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Gerry Mulligan & Astor Piazzolla/Discografía/(1992) Summit/CD CDOR 8588/mp3/03 - Years Of Solitude",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FGerry%20Mulligan%20%26%20Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1992)%20Summit%2FCD_CDOR%208588%2Fmp3%2F03%20-%20Years%20Of%20Solitude.mp3",
+      "durationMs": 251350
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-200",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Gerry Mulligan & Astor Piazzolla/Discografía/(1992) Summit/CD CDOR 8588/mp3/04 - Deus Xango",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FGerry%20Mulligan%20%26%20Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1992)%20Summit%2FCD_CDOR%208588%2Fmp3%2F04%20-%20Deus%20Xango.mp3",
+      "durationMs": 228100
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-201",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Gerry Mulligan & Astor Piazzolla/Discografía/(1992) Summit/CD CDOR 8588/mp3/05 - 20 Years After",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FGerry%20Mulligan%20%26%20Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1992)%20Summit%2FCD_CDOR%208588%2Fmp3%2F05%20-%2020%20Years%20After.mp3",
+      "durationMs": 254090
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-202",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Gerry Mulligan & Astor Piazzolla/Discografía/(1992) Summit/CD CDOR 8588/mp3/06 - Aire De Buenos Aires",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FGerry%20Mulligan%20%26%20Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1992)%20Summit%2FCD_CDOR%208588%2Fmp3%2F06%20-%20Aire%20De%20Buenos%20Aires.mp3",
+      "durationMs": 280270
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-203",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Gerry Mulligan & Astor Piazzolla/Discografía/(1992) Summit/CD CDOR 8588/mp3/07 - Reminiscence",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FGerry%20Mulligan%20%26%20Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1992)%20Summit%2FCD_CDOR%208588%2Fmp3%2F07%20-%20Reminiscence.mp3",
+      "durationMs": 392570
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-204",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Gerry Mulligan & Astor Piazzolla/Discografía/(1992) Summit/CD CDOR 8588/mp3/08 - Summit",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FGerry%20Mulligan%20%26%20Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1992)%20Summit%2FCD_CDOR%208588%2Fmp3%2F08%20-%20Summit.mp3",
+      "durationMs": 215960
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-205",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Kronos Quartet & Astor Piazzolla/Discografía/(1991) Five Tango Sensations/CD 9 79254-2/mp3/01 - Asleep",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FKronos%20Quartet%20%26%20Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Five%20Tango%20Sensations%2FCD_9%2079254-2%2Fmp3%2F01%20-%20Asleep.mp3",
+      "durationMs": 329090
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-206",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Kronos Quartet & Astor Piazzolla/Discografía/(1991) Five Tango Sensations/CD 9 79254-2/mp3/02 - Loving",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FKronos%20Quartet%20%26%20Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Five%20Tango%20Sensations%2FCD_9%2079254-2%2Fmp3%2F02%20-%20Loving.mp3",
+      "durationMs": 374310
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-207",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Kronos Quartet & Astor Piazzolla/Discografía/(1991) Five Tango Sensations/CD 9 79254-2/mp3/03 - Anxiety",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FKronos%20Quartet%20%26%20Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Five%20Tango%20Sensations%2FCD_9%2079254-2%2Fmp3%2F03%20-%20Anxiety.mp3",
+      "durationMs": 297220
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-208",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Kronos Quartet & Astor Piazzolla/Discografía/(1991) Five Tango Sensations/CD 9 79254-2/mp3/04 - Despertar",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FKronos%20Quartet%20%26%20Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Five%20Tango%20Sensations%2FCD_9%2079254-2%2Fmp3%2F04%20-%20Despertar.mp3",
+      "durationMs": 366240
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-209",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Kronos Quartet & Astor Piazzolla/Discografía/(1991) Five Tango Sensations/CD 9 79254-2/mp3/05 - Fear",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FKronos%20Quartet%20%26%20Astor%20Piazzolla%2FDiscograf%C3%ADa%2F(1991)%20Five%20Tango%20Sensations%2FCD_9%2079254-2%2Fmp3%2F05%20-%20Fear.mp3",
+      "durationMs": 242470
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-210",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Concierto Para Bandoneón Tres Tangos/(1988) Lalo Schifrin/CD/mp3/01 - Concierto Para Bandoneón Allegro Marcato",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FConcierto%20Para%20Bandone%C3%B3n%20_%20Tres%20Tangos%2F(1988)%20Lalo%20Schifrin%2FCD%2Fmp3%2F01%20-%20Concierto%20Para%20Bandone%C3%B3n_%20Allegro%20Marcato.mp3",
+      "durationMs": 421330
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-211",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Concierto Para Bandoneón Tres Tangos/(1988) Lalo Schifrin/CD/mp3/02 - Concierto Para Bandoneón Moderato",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FConcierto%20Para%20Bandone%C3%B3n%20_%20Tres%20Tangos%2F(1988)%20Lalo%20Schifrin%2FCD%2Fmp3%2F02%20-%20Concierto%20Para%20Bandone%C3%B3n_%20Moderato.mp3",
+      "durationMs": 438440
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-212",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Concierto Para Bandoneón Tres Tangos/(1988) Lalo Schifrin/CD/mp3/03 - Concierto Para Bandoneón Presto",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FConcierto%20Para%20Bandone%C3%B3n%20_%20Tres%20Tangos%2F(1988)%20Lalo%20Schifrin%2FCD%2Fmp3%2F03%20-%20Concierto%20Para%20Bandone%C3%B3n_%20Presto.mp3",
+      "durationMs": 386800
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-213",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Concierto Para Bandoneón Tres Tangos/(1988) Lalo Schifrin/CD/mp3/04 - Tres Tangos Para Bandoneón Y Orquesta Allegro Tranquillo",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FConcierto%20Para%20Bandone%C3%B3n%20_%20Tres%20Tangos%2F(1988)%20Lalo%20Schifrin%2FCD%2Fmp3%2F04%20-%20Tres%20Tangos%20Para%20Bandone%C3%B3n%20Y%20Orquesta_%20Allegro%20Tranquillo.mp3",
+      "durationMs": 402210
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-214",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Concierto Para Bandoneón Tres Tangos/(1988) Lalo Schifrin/CD/mp3/05 - Tres Tangos Para Bandoneón Y Orquesta Moderato Mistico",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FConcierto%20Para%20Bandone%C3%B3n%20_%20Tres%20Tangos%2F(1988)%20Lalo%20Schifrin%2FCD%2Fmp3%2F05%20-%20Tres%20Tangos%20Para%20Bandone%C3%B3n%20Y%20Orquesta_%20Moderato%20Mistico.mp3",
+      "durationMs": 332700
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-215",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Concierto Para Bandoneón Tres Tangos/(1988) Lalo Schifrin/CD/mp3/06 - Tres Tangos Para Bandoneón Y Orquesta Allegretto Molto Marcato",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FConcierto%20Para%20Bandone%C3%B3n%20_%20Tres%20Tangos%2F(1988)%20Lalo%20Schifrin%2FCD%2Fmp3%2F06%20-%20Tres%20Tangos%20Para%20Bandone%C3%B3n%20Y%20Orquesta_%20Allegretto%20Molto%20Marcato.mp3",
+      "durationMs": 252740
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-216",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Piazzollissimo 1979-1983/(1991) Astor Piazzolla/CD/mp3/12 - Awake",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FPiazzollissimo%201979-1983%2F(1991)%20Astor%20Piazzolla%2FCD%2Fmp3%2F12%20-%20Awake.mp3",
+      "durationMs": 351240
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-217",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Suite Troileana Lumière/(2014) Astor Piazzolla/CD/mp3/01 - Suite Troileana Bandoneón",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FSuite%20Troileana%20_%20Lumi%C3%A8re%2F(2014)%20Astor%20Piazzolla%2FCD%2Fmp3%2F01%20-%20Suite%20Troileana_%20Bandone%C3%B3n.mp3",
+      "durationMs": 484260
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-218",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Suite Troileana Lumière/(2014) Astor Piazzolla/CD/mp3/02 - Suite Troileana Zita",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FSuite%20Troileana%20_%20Lumi%C3%A8re%2F(2014)%20Astor%20Piazzolla%2FCD%2Fmp3%2F02%20-%20Suite%20Troileana_%20Zita.mp3",
+      "durationMs": 269710
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-219",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Suite Troileana Lumière/(2014) Astor Piazzolla/CD/mp3/03 - Suite Troileana Whisky",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FSuite%20Troileana%20_%20Lumi%C3%A8re%2F(2014)%20Astor%20Piazzolla%2FCD%2Fmp3%2F03%20-%20Suite%20Troileana_%20Whisky.mp3",
+      "durationMs": 265060
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-220",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Suite Troileana Lumière/(2014) Astor Piazzolla/CD/mp3/04 - Suite Troileana Escolaso",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FSuite%20Troileana%20_%20Lumi%C3%A8re%2F(2014)%20Astor%20Piazzolla%2FCD%2Fmp3%2F04%20-%20Suite%20Troileana_%20Escolaso.mp3",
+      "durationMs": 276010
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-221",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Suite Troileana Lumière/(2014) Astor Piazzolla/CD/mp3/05 - Lumiere Soledad",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FSuite%20Troileana%20_%20Lumi%C3%A8re%2F(2014)%20Astor%20Piazzolla%2FCD%2Fmp3%2F05%20-%20Lumiere_%20Soledad.mp3",
+      "durationMs": 247720
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-222",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Suite Troileana Lumière/(2014) Astor Piazzolla/CD/mp3/06 - Lumiere Muerte",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FSuite%20Troileana%20_%20Lumi%C3%A8re%2F(2014)%20Astor%20Piazzolla%2FCD%2Fmp3%2F06%20-%20Lumiere_%20Muerte.mp3",
+      "durationMs": 349340
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-223",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Suite Troileana Lumière/(2014) Astor Piazzolla/CD/mp3/07 - Lumiere El Amor",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FSuite%20Troileana%20_%20Lumi%C3%A8re%2F(2014)%20Astor%20Piazzolla%2FCD%2Fmp3%2F07%20-%20Lumiere_%20El%20Amor.mp3",
+      "durationMs": 251530
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-224",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/Obras/Suite Troileana Lumière/(2014) Astor Piazzolla/CD/mp3/08 - Lumiere La Evasión",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2FObras%2FSuite%20Troileana%20_%20Lumi%C3%A8re%2F(2014)%20Astor%20Piazzolla%2FCD%2Fmp3%2F08%20-%20Lumiere_%20La%20Evasi%C3%B3n.mp3",
+      "durationMs": 289960
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-225",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/otros/11-Balada Para Un Loco (1982)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2Fotros%2F11-Balada%20Para%20Un%20Loco%20(1982).mp3",
+      "durationMs": 408790
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-226",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/otros/Astor Piazzolla y Raúl Lavie Balada Para un Loco (RCTV 1984 Live En Vivo)",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2Fotros%2FAstor%20Piazzolla%20y%20Ra%C3%BAl%20Lavie%20%20%20Balada%20Para%20un%20Loco%20(RCTV%201984%20Live%20%20En%20Vivo).mp3",
+      "durationMs": 278020
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-227",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/otros/Balada para un loco Astor Piazzolla e Amelita Baltar",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2Fotros%2FBalada%20para%20un%20loco%20%20%20Astor%20Piazzolla%20e%20Amelita%20Baltar.mp3",
+      "durationMs": 295080
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-228",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/otros/Balada Para un Loco Astor Piazzolla e Eduardo Ferrer",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2Fotros%2FBalada%20Para%20un%20Loco%20%20%20Astor%20Piazzolla%20e%20Eduardo%20Ferrer.mp3",
+      "durationMs": 268180
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-229",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/otros/Balada para un loco - Astor Piazzolla e Amelita Baltar",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2Fotros%2FBalada%20para%20un%20loco%20-%20Astor%20Piazzolla%20e%20Amelita%20Baltar.mp3",
+      "durationMs": 293330
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-230",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/otros/MALENA canta el tango (A Piazzolla S Rinaldi)‏",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2Fotros%2FMALENA%20canta%20el%20tango%20(A%20Piazzolla%20%20S%20Rinaldi)%E2%80%8F.mp3",
+      "durationMs": 187440
+    },
+    {
+      "id": "audklvastorpiazzolladiscografia-231",
+      "orchestraId": "piazzolla",
+      "title": "Astor Piazzolla/Discografía/otros/Tangos Argentinos famosos - BALADA PARA UN LOCO - Roberto Polaco Goyeneche Astor Piazzolla",
+      "previewUrl": "https://archive.org/download/audklvastorpiazzolladiscografia/Astor%20Piazzolla%2FDiscograf%C3%ADa%2Fotros%2FTangos%20Argentinos%20famosos%20-%20BALADA%20PARA%20UN%20LOCO%20-%20Roberto%20Polaco%20Goyeneche%20_%20Astor%20Piazzolla.mp3",
+      "durationMs": 271260
+    },
+    {
+      "id": "balada-para-un-loco-by-amelita-baltar-232",
+      "orchestraId": "piazzolla",
+      "title": "Balada para un loco by Amelita Baltar",
+      "previewUrl": "https://archive.org/download/balada-para-un-loco-by-amelita-baltar/Balada%20para%20un%20loco%20by%20Amelita%20Baltar.mp3",
+      "durationMs": 276940
+    },
+    {
+      "id": "escualo-3-astor-piazzolla-y-su-quinteto-tango-nuevo-live-in-utrecht-1984-3-233",
+      "orchestraId": "piazzolla",
+      "title": "Escualo -3- ASTOR PIAZZOLLA y su Quinteto Tango Nuevo -live in Utrecht (1984) -3-",
+      "previewUrl": "https://archive.org/download/escualo-3-astor-piazzolla-y-su-quinteto-tango-nuevo-live-in-utrecht-1984-3/Escualo%20-3-%20ASTOR%20PIAZZOLLA%20%20y%20su%20Quinteto%20Tango%20Nuevo%20-live%20in%20Utrecht%20(1984)%20-3-.mp3",
+      "durationMs": 204410
+    },
+    {
+      "id": "HARAGANASTORPIAZZOLLAALDOCAMPOAMOR-234",
+      "orchestraId": "piazzolla",
+      "title": "HARAGAN - ASTOR PIAZZOLLA ALDO CAMPOAMOR",
+      "previewUrl": "https://archive.org/download/HARAGANASTORPIAZZOLLAALDOCAMPOAMOR/HARAGAN%20-%20%20ASTOR%20PIAZZOLLA%20%20%20ALDO%20CAMPOAMOR.mp3",
+      "durationMs": 156420
+    },
+    {
+      "id": "IlPleutSurSantiago01SalvadorAllende-235",
+      "orchestraId": "piazzolla",
+      "title": "Salvador Allende",
+      "previewUrl": "https://archive.org/download/IlPleutSurSantiago01SalvadorAllende/Il%20Pleut%20Sur%20Santiago%20-%2001%20-%20Salvador%20Allende.mp3",
+      "durationMs": 305890
+    },
+    {
+      "id": "IlPleutSurSantiago01SalvadorAllende-236",
+      "orchestraId": "piazzolla",
+      "title": "Combate En Al Fabrica",
+      "previewUrl": "https://archive.org/download/IlPleutSurSantiago01SalvadorAllende/Il%20Pleut%20Sur%20Santiago%20-%2002%20-%20Combate%20En%20Al%20Fabrica.mp3",
+      "durationMs": 203680
+    },
+    {
+      "id": "IlPleutSurSantiago01SalvadorAllende-237",
+      "orchestraId": "piazzolla",
+      "title": "La Maison De Monique",
+      "previewUrl": "https://archive.org/download/IlPleutSurSantiago01SalvadorAllende/Il%20Pleut%20Sur%20Santiago%20-%2003%20-%20La%20Maison%20De%20Monique.mp3",
+      "durationMs": 250930
+    },
+    {
+      "id": "IlPleutSurSantiago01SalvadorAllende-238",
+      "orchestraId": "piazzolla",
+      "title": "Bidonville",
+      "previewUrl": "https://archive.org/download/IlPleutSurSantiago01SalvadorAllende/Il%20Pleut%20Sur%20Santiago%20-%2004%20-%20Bidonville.mp3",
+      "durationMs": 299960
+    },
+    {
+      "id": "IlPleutSurSantiago01SalvadorAllende-239",
+      "orchestraId": "piazzolla",
+      "title": "Il Pleut Sur Santiago",
+      "previewUrl": "https://archive.org/download/IlPleutSurSantiago01SalvadorAllende/Il%20Pleut%20Sur%20Santiago%20-%2005%20-%20Il%20Pleut%20Sur%20Santiago.mp3",
+      "durationMs": 239150
+    },
+    {
+      "id": "OblivionRaduZaplitniiAndFabioRossato-240",
+      "orchestraId": "piazzolla",
+      "title": "Oblivion",
+      "previewUrl": "https://archive.org/download/OblivionRaduZaplitniiAndFabioRossato/Oblivion.mp3",
+      "durationMs": 244740
+    },
+    {
+      "id": "Roma197213PreludioNueve-241",
+      "orchestraId": "piazzolla",
+      "title": "Baires '72",
+      "previewUrl": "https://archive.org/download/Roma197213PreludioNueve/Roma%20(1972)%20-%2002%20-%20Baires%20'72.mp3",
+      "durationMs": 348470
+    },
+    {
+      "id": "Roma197213PreludioNueve-242",
+      "orchestraId": "piazzolla",
+      "title": "Divertimento Nueve",
+      "previewUrl": "https://archive.org/download/Roma197213PreludioNueve/Roma%20(1972)%20-%2004%20-%20Divertimento%20Nueve.mp3",
+      "durationMs": 356230
+    },
+    {
+      "id": "Roma197213PreludioNueve-243",
+      "orchestraId": "piazzolla",
+      "title": "Fuga",
+      "previewUrl": "https://archive.org/download/Roma197213PreludioNueve/Roma%20(1972)%20-%2006%20-%20Fuga.mp3",
+      "durationMs": 179590
+    },
+    {
+      "id": "Roma197213PreludioNueve-244",
+      "orchestraId": "piazzolla",
+      "title": "Mufa '72",
+      "previewUrl": "https://archive.org/download/Roma197213PreludioNueve/Roma%20(1972)%20-%2010%20-%20Mufa%20'72.mp3",
+      "durationMs": 166710
+    },
+    {
+      "id": "Roma197213PreludioNueve-245",
+      "orchestraId": "piazzolla",
+      "title": "Onda Nueve",
+      "previewUrl": "https://archive.org/download/Roma197213PreludioNueve/Roma%20(1972)%20-%2012%20-%20Onda%20Nueve.mp3",
+      "durationMs": 370340
+    },
+    {
+      "id": "Roma197213PreludioNueve-246",
+      "orchestraId": "piazzolla",
+      "title": "Preludio Nueve",
+      "previewUrl": "https://archive.org/download/Roma197213PreludioNueve/Roma%20(1972)%20-%2013%20-%20Preludio%20Nueve.mp3",
+      "durationMs": 422970
+    },
+    {
+      "id": "TeatroNazionaleDiMilano198401Biyuya-247",
+      "orchestraId": "piazzolla",
+      "title": "Biyuya",
+      "previewUrl": "https://archive.org/download/TeatroNazionaleDiMilano198401Biyuya/Teatro%20Nazionale%20di%20Milano%20(1984)%20-%2001%20-%20Biyuya.mp3",
+      "durationMs": 369630
+    },
+    {
+      "id": "TeatroNazionaleDiMilano198401Biyuya-248",
+      "orchestraId": "piazzolla",
+      "title": "Caliente",
+      "previewUrl": "https://archive.org/download/TeatroNazionaleDiMilano198401Biyuya/Teatro%20Nazionale%20di%20Milano%20(1984)%20-%2002%20-%20Caliente.mp3",
+      "durationMs": 280220
+    },
+    {
+      "id": "TeatroNazionaleDiMilano198401Biyuya-249",
+      "orchestraId": "piazzolla",
+      "title": "Escualo",
+      "previewUrl": "https://archive.org/download/TeatroNazionaleDiMilano198401Biyuya/Teatro%20Nazionale%20di%20Milano%20(1984)%20-%2007%20-%20Escualo.mp3",
+      "durationMs": 202680
+    },
+    {
+      "id": "TeatroNazionaleDiMilano198401Biyuya-250",
+      "orchestraId": "piazzolla",
+      "title": "Lunfardo",
+      "previewUrl": "https://archive.org/download/TeatroNazionaleDiMilano198401Biyuya/Teatro%20Nazionale%20di%20Milano%20(1984)%20-%2009%20-%20Lunfardo.mp3",
+      "durationMs": 334080
+    },
+    {
+      "id": "TeatroNazionaleDiMilano198401Biyuya-251",
+      "orchestraId": "piazzolla",
+      "title": "Revirado",
+      "previewUrl": "https://archive.org/download/TeatroNazionaleDiMilano198401Biyuya/Teatro%20Nazionale%20di%20Milano%20(1984)%20-%2010%20-%20Revirado.mp3",
+      "durationMs": 209920
+    },
+    {
+      "id": "3006EspecialOsvaldoPuglieseParte2-252",
       "orchestraId": "pugliese",
-      "title": "Gallo Ciego",
-      "previewUrl": "https://archive.org/download/pugliesegallociego/pugliesegallociego.mp3",
-      "durationMs": 215000
+      "title": "06 Especial Osvaldo Pugliese Parte 2",
+      "previewUrl": "https://archive.org/download/3006EspecialOsvaldoPuglieseParte2/30-06%20Especial%20Osvaldo%20Pugliese%20Parte%202.mp3",
+      "durationMs": 871720
     },
     {
-      "id": "Pugliese.brujo-10",
+      "id": "7695-a-16812-253",
       "orchestraId": "pugliese",
-      "title": "Si Sos Brujo",
-      "previewUrl": "https://archive.org/download/Pugliese.brujo/Pugliese.brujo.mp3",
+      "title": "A-16812",
+      "previewUrl": "https://archive.org/download/7695-a-16812/7695%20A-16812.mp3",
+      "durationMs": 123690
+    },
+    {
+      "id": "7695-a-16812-254",
+      "orchestraId": "pugliese",
+      "title": "A-16813",
+      "previewUrl": "https://archive.org/download/7695-a-16812/7695%20A-16813.mp3",
+      "durationMs": 160240
+    },
+    {
+      "id": "lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica-255",
+      "orchestraId": "pugliese",
+      "title": "La Yumba",
+      "previewUrl": "https://archive.org/download/lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica/disc1%2F01.01.%20La%20Yumba.mp3",
+      "durationMs": 170000
+    },
+    {
+      "id": "lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica-256",
+      "orchestraId": "pugliese",
+      "title": "Antiguo Reloj De Cobre",
+      "previewUrl": "https://archive.org/download/lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica/disc1%2F01.02.%20Antiguo%20Reloj%20De%20Cobre.mp3",
+      "durationMs": 155000
+    },
+    {
+      "id": "lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica-257",
+      "orchestraId": "pugliese",
+      "title": "El Abrojito",
+      "previewUrl": "https://archive.org/download/lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica/disc1%2F01.03.%20El%20Abrojito.mp3",
       "durationMs": 200000
     },
     {
-      "id": "pugliese.morena-11",
+      "id": "lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica-258",
       "orchestraId": "pugliese",
-      "title": "Morena",
-      "previewUrl": "https://archive.org/download/pugliese.morena/Pugliese.Morena.mp3",
-      "durationMs": 160000
+      "title": "Un Baile A Beneficio",
+      "previewUrl": "https://archive.org/download/lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica/disc1%2F01.04.%20Un%20Baile%20A%20Beneficio.mp3",
+      "durationMs": 200000
     },
     {
-      "id": "HARAGANASTORPIAZZOLLAALDOCAMPOAMOR-12",
-      "orchestraId": "piazzolla",
-      "title": "Haragan",
-      "previewUrl": "https://archive.org/download/HARAGANASTORPIAZZOLLAALDOCAMPOAMOR/HARAGAN%20-%20%20ASTOR%20PIAZZOLLA%20%20%20ALDO%20CAMPOAMOR.mp3",
-      "durationMs": 156000
+      "id": "lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica-259",
+      "orchestraId": "pugliese",
+      "title": "Chiqué",
+      "previewUrl": "https://archive.org/download/lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica/disc1%2F01.05.%20Chiqu%C3%A9.mp3",
+      "durationMs": 195000
     },
     {
-      "id": "AstorPiazzollaBragatissimo-13",
-      "orchestraId": "piazzolla",
-      "title": "Bragatissimo",
-      "previewUrl": "https://archive.org/download/AstorPiazzollaBragatissimo/Astor%20Piazzolla%20-%20Bragatissimo.mp3",
+      "id": "lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica-260",
+      "orchestraId": "pugliese",
+      "title": "Puente Alsina",
+      "previewUrl": "https://archive.org/download/lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica/disc1%2F01.06.%20Puente%20Alsina.mp3",
+      "durationMs": 196000
+    },
+    {
+      "id": "lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica-261",
+      "orchestraId": "pugliese",
+      "title": "Dicha Pasada",
+      "previewUrl": "https://archive.org/download/lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica/disc1%2F01.07.%20Dicha%20Pasada.mp3",
+      "durationMs": 194000
+    },
+    {
+      "id": "lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica-262",
+      "orchestraId": "pugliese",
+      "title": "Corrientes Y Esmeralda",
+      "previewUrl": "https://archive.org/download/lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica/disc1%2F02.01.%20Corrientes%20Y%20Esmeralda.mp3",
+      "durationMs": 171000
+    },
+    {
+      "id": "lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica-263",
+      "orchestraId": "pugliese",
+      "title": "Pasional",
+      "previewUrl": "https://archive.org/download/lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica/disc1%2F02.02.%20Pasional.mp3",
+      "durationMs": 208000
+    },
+    {
+      "id": "lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica-264",
+      "orchestraId": "pugliese",
+      "title": "San José De Flores",
+      "previewUrl": "https://archive.org/download/lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica/disc1%2F02.03.%20San%20Jos%C3%A9%20De%20Flores.mp3",
+      "durationMs": 214000
+    },
+    {
+      "id": "lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica-265",
+      "orchestraId": "pugliese",
+      "title": "Manos Adoradas",
+      "previewUrl": "https://archive.org/download/lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica/disc1%2F02.04.%20Manos%20Adoradas.mp3",
+      "durationMs": 139000
+    },
+    {
+      "id": "lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica-266",
+      "orchestraId": "pugliese",
+      "title": "Gurisa",
+      "previewUrl": "https://archive.org/download/lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica/disc1%2F02.05.%20Gurisa.mp3",
+      "durationMs": 198000
+    },
+    {
+      "id": "lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica-267",
+      "orchestraId": "pugliese",
+      "title": "Recuerdo",
+      "previewUrl": "https://archive.org/download/lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica/disc1%2F02.06.%20Recuerdo.mp3",
+      "durationMs": 164000
+    },
+    {
+      "id": "lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica-268",
+      "orchestraId": "pugliese",
+      "title": "Remembranzas",
+      "previewUrl": "https://archive.org/download/lp_historiando-a-osvaldo-pugliese_osvaldo-pugliese-y-su-orquesta-tipica/disc1%2F02.07.%20Remembranzas.mp3",
       "durationMs": 222000
     },
     {
-      "id": "escualo-3-astor-piazzolla-y-su-quinteto-tango-nuevo-live-in-utrecht-1984-3-14",
-      "orchestraId": "piazzolla",
-      "title": "Escualo (Live In Utrecht, 1984)",
-      "previewUrl": "https://archive.org/download/escualo-3-astor-piazzolla-y-su-quinteto-tango-nuevo-live-in-utrecht-1984-3/Escualo%20-3-%20ASTOR%20PIAZZOLLA%20%20y%20su%20Quinteto%20Tango%20Nuevo%20-live%20in%20Utrecht%20(1984)%20-3-.mp3",
-      "durationMs": 204000
+      "id": "mvm-monk-2020-12-03-osvaldo-pugliese-269",
+      "orchestraId": "pugliese",
+      "title": "MVM Monk 2020-12-03 Osvaldo Pugliese",
+      "previewUrl": "https://archive.org/download/mvm-monk-2020-12-03-osvaldo-pugliese/MVM%20Monk%202020-12-03%20Osvaldo%20Pugliese.mp3",
+      "durationMs": 382560
+    },
+    {
+      "id": "Pugliese.brujo-270",
+      "orchestraId": "pugliese",
+      "title": "Si sos brujo",
+      "previewUrl": "https://archive.org/download/Pugliese.brujo/Pugliese.brujo.mp3",
+      "durationMs": 200490
+    },
+    {
+      "id": "pugliese.morena-271",
+      "orchestraId": "pugliese",
+      "title": "(M) Ins - Morena",
+      "previewUrl": "https://archive.org/download/pugliese.morena/Pugliese.Morena.mp3",
+      "durationMs": 159880
+    },
+    {
+      "id": "puglieserecuerdo-272",
+      "orchestraId": "pugliese",
+      "title": "Instrumental - Recuerdo",
+      "previewUrl": "https://archive.org/download/puglieserecuerdo/Pugliese.Recuerdo.mp3",
+      "durationMs": 164520
+    },
+    {
+      "id": "78_buenos-aires_anibal-troilo-y-su-orquesta-jorge-casal-manuel-romero-manuel-jovs_gbia7038581a-273",
+      "orchestraId": "troilo",
+      "title": "BUENOS AIRES",
+      "previewUrl": "https://archive.org/download/78_buenos-aires_anibal-troilo-y-su-orquesta-jorge-casal-manuel-romero-manuel-jovs_gbia7038581a/BUENOS%20AIRES%20-%20ANIBAL%20TROILO%20y%20su%20orquesta.mp3",
+      "durationMs": 237000
+    },
+    {
+      "id": "78_contratiempo_anibal-troilo-y-su-orquesta-astor-piazzolla_gbia7038581b-274",
+      "orchestraId": "troilo",
+      "title": "CONTRATIEMPO - ANIBAL TROILO y su orquesta",
+      "previewUrl": "https://archive.org/download/78_contratiempo_anibal-troilo-y-su-orquesta-astor-piazzolla_gbia7038581b/CONTRATIEMPO%20-%20ANIBAL%20TROILO%20y%20su%20orquesta.mp3",
+      "durationMs": 171000
+    },
+    {
+      "id": "78_fueye_anibal-troilo-pichuco-y-su-orquesta-tipica-fiorentino-h-manzi-charlo_gbia0344617b-275",
+      "orchestraId": "troilo",
+      "title": "FUEYE",
+      "previewUrl": "https://archive.org/download/78_fueye_anibal-troilo-pichuco-y-su-orquesta-tipica-fiorentino-h-manzi-charlo_gbia0344617b/FUEYE%20-%20ANIBAL%20TROILO%20(PICHUCO)%20Y%20SU%20ORQUESTA%20TIPICA.mp3",
+      "durationMs": 202370
+    },
+    {
+      "id": "78_toda-mi-vida_anibal-troilo-pichuco-y-su-orquesta-tipica-fiorentino-jm-contursi_gbia0344617a-276",
+      "orchestraId": "troilo",
+      "title": "TODA MI VIDA",
+      "previewUrl": "https://archive.org/download/78_toda-mi-vida_anibal-troilo-pichuco-y-su-orquesta-tipica-fiorentino-jm-contursi_gbia0344617a/TODA%20MI%20VIDA%20-%20ANIBAL%20TROILO%20(PICHUCO)%20Y%20SU%20ORQUESTA%20TIPICA.mp3",
+      "durationMs": 183530
+    },
+    {
+      "id": "anibal-troilo-y-su-orquesta-tipica-la-cumparsita-277",
+      "orchestraId": "troilo",
+      "title": "anibal-troilo-y-su-orquesta-tipica-la-cumparsita",
+      "previewUrl": "https://archive.org/download/anibal-troilo-y-su-orquesta-tipica-la-cumparsita/anibal-troilo-y-su-orquesta-tipica-la-cumparsita.mp3",
+      "durationMs": 154020
+    },
+    {
+      "id": "AnibalTroilo-278",
+      "orchestraId": "troilo",
+      "title": "Anibal Troilo",
+      "previewUrl": "https://archive.org/download/AnibalTroilo/Anibal%20Troilo.mp3",
+      "durationMs": 255190
+    },
+    {
+      "id": "aporee_40820_46596-279",
+      "orchestraId": "troilo",
+      "title": "Troilo Campeón / Aníbal Troilo 989, CABA, Argentina",
+      "previewUrl": "https://archive.org/download/aporee_40820_46596/Mundial.mp3",
+      "durationMs": 245380
+    },
+    {
+      "id": "aporee_64421_74357-280",
+      "orchestraId": "troilo",
+      "title": "STE00020240607192147",
+      "previewUrl": "https://archive.org/download/aporee_64421_74357/STE00020240607192147.mp3",
+      "durationMs": 66000
+    },
+    {
+      "id": "desencuentroPorSandraLuna-281",
+      "orchestraId": "troilo",
+      "title": "16. Desencuentro",
+      "previewUrl": "https://archive.org/download/desencuentroPorSandraLuna/16.Desencuentro.mp3",
+      "durationMs": 113370
+    },
+    {
+      "id": "lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche-282",
+      "orchestraId": "troilo",
+      "title": "En Esta Tarde Gris",
+      "previewUrl": "https://archive.org/download/lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche/disc1%2F01.01.%20En%20Esta%20Tarde%20Gris.mp3",
+      "durationMs": 223820
+    },
+    {
+      "id": "lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche-283",
+      "orchestraId": "troilo",
+      "title": "Fueye",
+      "previewUrl": "https://archive.org/download/lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche/disc1%2F01.02.%20Fueye.mp3",
+      "durationMs": 183020
+    },
+    {
+      "id": "lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche-284",
+      "orchestraId": "troilo",
+      "title": "Barrio De Tango",
+      "previewUrl": "https://archive.org/download/lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche/disc1%2F01.03.%20Barrio%20De%20Tango.mp3",
+      "durationMs": 179830
+    },
+    {
+      "id": "lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche-285",
+      "orchestraId": "troilo",
+      "title": "Toda Mi Vida",
+      "previewUrl": "https://archive.org/download/lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche/disc1%2F01.04.%20Toda%20Mi%20Vida.mp3",
+      "durationMs": 172820
+    },
+    {
+      "id": "lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche-286",
+      "orchestraId": "troilo",
+      "title": "Corazon De Papel",
+      "previewUrl": "https://archive.org/download/lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche/disc1%2F01.05.%20Corazon%20De%20Papel.mp3",
+      "durationMs": 177020
+    },
+    {
+      "id": "lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche-287",
+      "orchestraId": "troilo",
+      "title": "La Violeta",
+      "previewUrl": "https://archive.org/download/lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche/disc1%2F01.06.%20La%20Violeta.mp3",
+      "durationMs": 175730
+    },
+    {
+      "id": "lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche-288",
+      "orchestraId": "troilo",
+      "title": "Tinta Roja",
+      "previewUrl": "https://archive.org/download/lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche/disc1%2F02.01.%20Tinta%20Roja.mp3",
+      "durationMs": 181440
+    },
+    {
+      "id": "lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche-289",
+      "orchestraId": "troilo",
+      "title": "Sur",
+      "previewUrl": "https://archive.org/download/lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche/disc1%2F02.02.%20Sur.mp3",
+      "durationMs": 237240
+    },
+    {
+      "id": "lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche-290",
+      "orchestraId": "troilo",
+      "title": "Trenzas",
+      "previewUrl": "https://archive.org/download/lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche/disc1%2F02.03.%20Trenzas.mp3",
+      "durationMs": 200040
+    },
+    {
+      "id": "lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche-291",
+      "orchestraId": "troilo",
+      "title": "Una Cancion",
+      "previewUrl": "https://archive.org/download/lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche/disc1%2F02.04.%20Una%20Cancion.mp3",
+      "durationMs": 179040
+    },
+    {
+      "id": "lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche-292",
+      "orchestraId": "troilo",
+      "title": "El Bulin De La Calle Ayacucho",
+      "previewUrl": "https://archive.org/download/lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche/disc1%2F02.05.%20El%20Bulin%20De%20La%20Calle%20Ayacucho.mp3",
+      "durationMs": 164040
+    },
+    {
+      "id": "lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche-293",
+      "orchestraId": "troilo",
+      "title": "Fogon De Huella",
+      "previewUrl": "https://archive.org/download/lp_te-acordas-polaco_anibal-troilo-roberto-goyeneche/disc1%2F02.06.%20Fogon%20De%20Huella.mp3",
+      "durationMs": 190130
+    },
+    {
+      "id": "troilo.sur-294",
+      "orchestraId": "troilo",
+      "title": "Sur",
+      "previewUrl": "https://archive.org/download/troilo.sur/Troilo.Sur.mp3",
+      "durationMs": 238810
+    },
+    {
+      "id": "troilomilongueandoenelcuarenta-295",
+      "orchestraId": "troilo",
+      "title": "Instrumental - Milongueando en el cuarenta",
+      "previewUrl": "https://archive.org/download/troilomilongueandoenelcuarenta/troilomilongueandoenelcuarenta.mp3",
+      "durationMs": 152690
     }
   ]
 }

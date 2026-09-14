@@ -146,13 +146,13 @@ required track coverage before a session can begin.
 ### Real catalogue (archive.org)
 
 `public/catalogue/starter-catalogue.json` on disk is the production catalogue, generated
-from a curated list of publicly hosted, individually addressable MP3 recordings on
-[archive.org](https://archive.org) (three tracks per orchestra, 15 total), each confirmed to
-be a single streamable file — not a multi-track ZIP — in the `opensource_audio`/`community`
-collections. The source list, with the archive.org item identifier and filename for every
-track, lives in `tools/build-catalogue/archive-org-tracks.ts`.
+from publicly hosted, individually addressable MP3 recordings on
+[archive.org](https://archive.org). `tools/build-catalogue/archive-org-tracks.ts` searches
+Archive.org for each supported orchestra, reads item metadata, and treats MP3 files with a
+reported duration between one and fifteen minutes as individual tracks. It prefers normal
+MP3 files over duplicate 64 kbps derivatives.
 
-To add/replace tracks, edit that file and regenerate the catalogue:
+To refresh the catalogue from the latest Archive.org search results:
 
 ```bash
 npm run build:catalogue
@@ -160,7 +160,8 @@ npm run build:catalogue
 
 This writes a fresh `public/catalogue/starter-catalogue.json` with `previewUrl`s pointing at
 `https://archive.org/download/<identifier>/<filename>` (archive.org's stable, CORS-enabled
-direct-download URL pattern) and a `version` of `archive-org-catalogue-<date>`.
+direct-download URL pattern) and a `version` of `archive-org-catalogue-<date>`. The generator
+uses Archive.org metadata and does not send a separate request to every generated media URL.
 
 ### Local test catalogue (synthetic clips)
 

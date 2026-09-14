@@ -1,5 +1,5 @@
 import { writeFile } from 'node:fs/promises';
-import { ARCHIVE_ORG_TRACKS } from './archive-org-tracks';
+import { discoverArchiveOrgTracks } from './archive-org-tracks';
 import { ORCHESTRAS } from '../../src/game/catalogue/orchestras';
 import type { Catalogue, Track } from '../../src/game/types';
 
@@ -9,7 +9,8 @@ function archiveOrgDownloadUrl(identifier: string, filename: string): string {
   return `https://archive.org/download/${identifier}/${encodeURIComponent(filename)}`;
 }
 
-const tracks: Track[] = ARCHIVE_ORG_TRACKS.map((track, index) => ({
+const archiveOrgTracks = await discoverArchiveOrgTracks();
+const tracks: Track[] = archiveOrgTracks.map((track, index) => ({
   id: `${track.identifier}-${index}`,
   orchestraId: track.orchestraId,
   title: track.title,
