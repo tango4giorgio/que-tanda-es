@@ -1,6 +1,7 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { App } from '../../src/app/App';
+import { TEST_CATALOGUE } from '../fixtures/catalogue';
 
 const feedbackAudio = vi.hoisted(() => ({
   playCorrect: vi.fn().mockResolvedValue(undefined),
@@ -20,6 +21,10 @@ vi.mock('../../src/game/audio/countdown-sound-player', () => ({
 
 describe('App', () => {
   beforeEach(() => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve(TEST_CATALOGUE)
+    }));
     feedbackAudio.playCorrect.mockReset().mockResolvedValue(undefined);
     feedbackAudio.playIncorrect.mockReset().mockResolvedValue(undefined);
     countdownAudio.playPip.mockReset().mockResolvedValue(undefined);
@@ -30,10 +35,6 @@ describe('App', () => {
   });
 
   it('loads the catalogue and starts a guest session', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
     render(<App countdownStepMs={1} countdownEndPauseMs={1} />);
@@ -45,10 +46,6 @@ describe('App', () => {
   });
 
   it('opens and closes the privacy notice', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     render(<App countdownStepMs={1} countdownEndPauseMs={1} />);
     await waitFor(() => expect(screen.getByRole('button', { name: 'Privacy notice' })).toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Privacy notice' }));
@@ -58,10 +55,6 @@ describe('App', () => {
   });
 
   it('starts playback for the next round after continuing', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     vi.spyOn(Math, 'random').mockReturnValue(0);
     const play = vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
@@ -76,10 +69,6 @@ describe('App', () => {
   });
 
   it('resumes playback automatically after "Play again" is clicked on the session summary', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     // With Math.random fixed at 0, round order/correct answers are deterministic:
     // round 1 = Juan D'Arienzo, round 2 = Anibal Troilo, round 3 = Osvaldo Pugliese.
     vi.spyOn(Math, 'random').mockReturnValue(0);
@@ -106,10 +95,6 @@ describe('App', () => {
   });
 
   it('advances the potential score preview while a round is playing', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
     let seconds = 0;
@@ -122,10 +107,6 @@ describe('App', () => {
   });
 
   it('pauses on a wrong guess, shows an indication, and waits for a manual continue', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     vi.spyOn(Math, 'random').mockReturnValue(0);
     const play = vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
@@ -147,10 +128,6 @@ describe('App', () => {
   });
 
   it('keeps answer choices disabled until the prepared next track starts playing', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     vi.spyOn(Math, 'random').mockReturnValue(0);
     let resolveNextPlayback!: () => void;
     let playCount = 0;
@@ -194,10 +171,6 @@ describe('App', () => {
   });
 
   it('plays the correct feedback sound once for a correct answer', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     vi.spyOn(Math, 'random').mockReturnValue(0);
     vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
@@ -213,10 +186,6 @@ describe('App', () => {
   });
 
   it('plays the incorrect feedback sound once for a wrong answer and stays silent on skip', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     vi.spyOn(Math, 'random').mockReturnValue(0);
     vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
@@ -239,10 +208,6 @@ describe('App', () => {
   });
 
   it('continues gameplay if feedback sound playback rejects', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     vi.spyOn(Math, 'random').mockReturnValue(0);
     vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
@@ -262,10 +227,6 @@ describe('App', () => {
   });
 
   it('completes a correct round if its feedback sound playback rejects', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     vi.spyOn(Math, 'random').mockReturnValue(0);
     vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
@@ -283,10 +244,6 @@ describe('App', () => {
   });
 
   it('shows a complete countdown and plays five pips plus the final pip', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
     render(<App countdownStepMs={20} countdownEndPauseMs={30} />);
@@ -307,10 +264,6 @@ describe('App', () => {
   });
 
   it('prepares during the countdown and starts playback only after it completes', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
     const play = vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     const load = vi.spyOn(HTMLMediaElement.prototype, 'load').mockImplementation(function (this: HTMLMediaElement) {
@@ -329,10 +282,6 @@ describe('App', () => {
   });
 
   it('reveals the round on time and starts playback when slow preparation finishes', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     const audioElement = document.createElement('audio');
     audioElement.load = vi.fn();
     audioElement.play = vi.fn().mockResolvedValue(undefined);
@@ -350,10 +299,6 @@ describe('App', () => {
   });
 
   it('shows service unavailable if current track preparation fails', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     const audioElement = document.createElement('audio');
     audioElement.load = vi.fn();
     audioElement.play = vi.fn().mockResolvedValue(undefined);
@@ -369,10 +314,6 @@ describe('App', () => {
   });
 
   it('does not start prepared playback after the app unmounts', async () => {
-    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
-      ok: true,
-      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
-    }));
     const audioElement = document.createElement('audio');
     audioElement.load = vi.fn();
     audioElement.play = vi.fn().mockResolvedValue(undefined);

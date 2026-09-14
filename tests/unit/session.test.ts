@@ -1,10 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import valid from '../../public/catalogue/starter-catalogue.json';
 import { validateCatalogue } from '../../src/game/catalogue/catalogue';
 import { createSession, reduceSession } from '../../src/game/engine/session';
 import type { Catalogue } from '../../src/game/types';
+import { TEST_CATALOGUE } from '../fixtures/catalogue';
 
-const catalogue = validateCatalogue(valid);
+const catalogue = validateCatalogue(TEST_CATALOGUE);
 
 const multiTrackCatalogue: Catalogue = {
   version: 'test-catalogue-multitrack',
