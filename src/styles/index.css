@@ -9,5 +9,7 @@ main { width: min(44rem, 100%); margin: 0 auto; padding: 2rem 1rem; text-align: 
 .score { font-size: 1.25rem; font-weight: 700; }
 .feedback { font-weight: 700; padding: .5rem; border-radius: .5rem; }
 .feedback-wrong { background: #5c1f2b; color: #ffb4c0; }
+.countdown { min-height: 100vh; display: grid; align-content: center; }
+.countdown-value { margin: 0; font-size: clamp(8rem, 40vw, 18rem); font-weight: 800; line-height: 1; }
 footer { margin-top: 3rem; }
 @media (min-width: 640px) { .choices { grid-template-columns: repeat(3, 1fr); } }

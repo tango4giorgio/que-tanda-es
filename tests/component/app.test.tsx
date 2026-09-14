@@ -6,15 +6,27 @@ const feedbackAudio = vi.hoisted(() => ({
   playCorrect: vi.fn().mockResolvedValue(undefined),
   playIncorrect: vi.fn().mockResolvedValue(undefined)
 }));
+const countdownAudio = vi.hoisted(() => ({
+  playPip: vi.fn().mockResolvedValue(undefined),
+  playFinalPip: vi.fn().mockResolvedValue(undefined)
+}));
 
 vi.mock('../../src/game/audio/feedback-sound-player', () => ({
   createFeedbackSoundPlayer: () => feedbackAudio
+}));
+vi.mock('../../src/game/audio/countdown-sound-player', () => ({
+  createCountdownSoundPlayer: () => countdownAudio
 }));
 
 describe('App', () => {
   beforeEach(() => {
     feedbackAudio.playCorrect.mockReset().mockResolvedValue(undefined);
     feedbackAudio.playIncorrect.mockReset().mockResolvedValue(undefined);
+    countdownAudio.playPip.mockReset().mockResolvedValue(undefined);
+    countdownAudio.playFinalPip.mockReset().mockResolvedValue(undefined);
+    vi.spyOn(HTMLMediaElement.prototype, 'load').mockImplementation(function (this: HTMLMediaElement) {
+      this.dispatchEvent(new Event('canplay'));
+    });
   });
 
   it('loads the catalogue and starts a guest session', async () => {
@@ -24,7 +36,7 @@ describe('App', () => {
     }));
     vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
-    render(<App />);
+    render(<App countdownStepMs={1} countdownEndPauseMs={1} />);
     await waitFor(() => expect(screen.getByText('Loading music…')).toBeInTheDocument());
     await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
@@ -37,7 +49,7 @@ describe('App', () => {
       ok: true,
       json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
     }));
-    render(<App />);
+    render(<App countdownStepMs={1} countdownEndPauseMs={1} />);
     await waitFor(() => expect(screen.getByRole('button', { name: 'Privacy notice' })).toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Privacy notice' }));
     expect(screen.getByRole('heading', { name: 'Privacy notice' })).toBeInTheDocument();
@@ -53,7 +65,7 @@ describe('App', () => {
     vi.spyOn(Math, 'random').mockReturnValue(0);
     const play = vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
-    render(<App />);
+    render(<App countdownStepMs={1} countdownEndPauseMs={1} />);
     await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
     await waitFor(() => expect(screen.getByRole('button', { name: "Juan D'Arienzo" })).toBeInTheDocument());
@@ -73,7 +85,7 @@ describe('App', () => {
     vi.spyOn(Math, 'random').mockReturnValue(0);
     const play = vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
-    render(<App />);
+    render(<App countdownStepMs={1} countdownEndPauseMs={1} />);
     await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
 
@@ -102,7 +114,7 @@ describe('App', () => {
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
     let seconds = 0;
     vi.spyOn(HTMLMediaElement.prototype, 'currentTime', 'get').mockImplementation(() => (seconds += 1));
-    render(<App />);
+    render(<App countdownStepMs={1} countdownEndPauseMs={1} />);
     await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
     await waitFor(() => expect(screen.getByLabelText('Potential score')).toHaveTextContent('300 pts if correct now'));
@@ -117,7 +129,7 @@ describe('App', () => {
     vi.spyOn(Math, 'random').mockReturnValue(0);
     const play = vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
-    render(<App />);
+    render(<App countdownStepMs={1} countdownEndPauseMs={1} />);
     await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
     await waitFor(() => expect(screen.getByText(/Track 1 of up to 3/)).toBeInTheDocument());
@@ -141,7 +153,7 @@ describe('App', () => {
     vi.spyOn(Math, 'random').mockReturnValue(0);
     vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
-    render(<App />);
+    render(<App countdownStepMs={1} countdownEndPauseMs={1} />);
     await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
     await waitFor(() => expect(screen.getByRole('button', { name: "Juan D'Arienzo" })).toBeInTheDocument());
@@ -160,7 +172,7 @@ describe('App', () => {
     vi.spyOn(Math, 'random').mockReturnValue(0);
     vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
-    render(<App />);
+    render(<App countdownStepMs={1} countdownEndPauseMs={1} />);
     await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
     await waitFor(() => expect(screen.getByRole('button', { name: "Juan D'Arienzo" })).toBeInTheDocument());
@@ -187,7 +199,7 @@ describe('App', () => {
     vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
     feedbackAudio.playIncorrect.mockRejectedValueOnce(new Error('blocked'));
-    render(<App />);
+    render(<App countdownStepMs={1} countdownEndPauseMs={1} />);
     await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
     await waitFor(() => expect(screen.getByRole('button', { name: "Juan D'Arienzo" })).toBeInTheDocument());
@@ -210,7 +222,7 @@ describe('App', () => {
     vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
     vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
     feedbackAudio.playCorrect.mockRejectedValueOnce(new Error('blocked'));
-    render(<App />);
+    render(<App countdownStepMs={1} countdownEndPauseMs={1} />);
     await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
     await waitFor(() => expect(screen.getByRole('button', { name: "Juan D'Arienzo" })).toBeInTheDocument());
@@ -220,5 +232,114 @@ describe('App', () => {
     await waitFor(() => expect(screen.getByRole('heading', { name: 'Round complete' })).toBeInTheDocument());
     expect(screen.getByText(/Round score: [1-9]\d*/)).toBeInTheDocument();
     expect(screen.queryByText('Music service unavailable')).not.toBeInTheDocument();
+  });
+
+  it('shows a complete countdown and plays five pips plus the final pip', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
+    }));
+    vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
+    vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
+    render(<App countdownStepMs={20} countdownEndPauseMs={30} />);
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
+
+    fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
+
+    expect(screen.getByRole('status')).toHaveTextContent('5');
+    for (const value of ['4', '3', '2', '1']) {
+      await waitFor(() => expect(screen.getByRole('status')).toHaveTextContent(value), { interval: 2 });
+    }
+    await waitFor(() => expect(countdownAudio.playFinalPip).toHaveBeenCalledTimes(1), { interval: 2 });
+    expect(screen.getByRole('status')).toHaveTextContent('1');
+    expect(screen.queryByText(/Track 1 of up to 3/)).not.toBeInTheDocument();
+    await waitFor(() => expect(screen.getByText(/Track 1 of up to 3/)).toBeInTheDocument());
+    expect(countdownAudio.playPip).toHaveBeenCalledTimes(5);
+    expect(countdownAudio.playFinalPip).toHaveBeenCalledTimes(1);
+  });
+
+  it('prepares during the countdown and starts playback only after it completes', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
+    }));
+    vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
+    const play = vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue(undefined);
+    const load = vi.spyOn(HTMLMediaElement.prototype, 'load').mockImplementation(function (this: HTMLMediaElement) {
+      this.dispatchEvent(new Event('canplay'));
+    });
+    render(<App countdownStepMs={5} countdownEndPauseMs={1} />);
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
+
+    fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
+
+    expect(screen.getByRole('status')).toHaveTextContent('5');
+    expect(load).toHaveBeenCalledOnce();
+    expect(play).not.toHaveBeenCalled();
+    await waitFor(() => expect(screen.getByText(/Track 1 of up to 3/)).toBeInTheDocument());
+    await waitFor(() => expect(play).toHaveBeenCalledOnce());
+  });
+
+  it('reveals the round on time and starts playback when slow preparation finishes', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
+    }));
+    const audioElement = document.createElement('audio');
+    audioElement.load = vi.fn();
+    audioElement.play = vi.fn().mockResolvedValue(undefined);
+    audioElement.pause = vi.fn();
+    vi.stubGlobal('Audio', vi.fn(() => audioElement));
+    render(<App countdownStepMs={5} countdownEndPauseMs={1} />);
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
+
+    fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
+
+    await waitFor(() => expect(screen.getByText(/Track 1 of up to 3/)).toBeInTheDocument());
+    expect(audioElement.play).not.toHaveBeenCalled();
+    audioElement.dispatchEvent(new Event('canplay'));
+    await waitFor(() => expect(audioElement.play).toHaveBeenCalledOnce());
+  });
+
+  it('shows service unavailable if current track preparation fails', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
+    }));
+    const audioElement = document.createElement('audio');
+    audioElement.load = vi.fn();
+    audioElement.play = vi.fn().mockResolvedValue(undefined);
+    audioElement.pause = vi.fn();
+    vi.stubGlobal('Audio', vi.fn(() => audioElement));
+    render(<App countdownStepMs={5} countdownEndPauseMs={1} />);
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
+
+    fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
+    audioElement.dispatchEvent(new Event('error'));
+
+    await waitFor(() => expect(screen.getByText('Music service unavailable')).toBeInTheDocument());
+  });
+
+  it('does not start prepared playback after the app unmounts', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
+    }));
+    const audioElement = document.createElement('audio');
+    audioElement.load = vi.fn();
+    audioElement.play = vi.fn().mockResolvedValue(undefined);
+    audioElement.pause = vi.fn();
+    vi.stubGlobal('Audio', vi.fn(() => audioElement));
+    const { unmount } = render(<App countdownStepMs={1} countdownEndPauseMs={1} />);
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
+
+    fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
+    await waitFor(() => expect(screen.getByText(/Track 1 of up to 3/)).toBeInTheDocument());
+    unmount();
+    audioElement.dispatchEvent(new Event('canplay'));
+    await Promise.resolve();
+    await Promise.resolve();
+
+    expect(audioElement.play).not.toHaveBeenCalled();
   });
 });

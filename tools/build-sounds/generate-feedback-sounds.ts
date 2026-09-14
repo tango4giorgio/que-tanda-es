@@ -63,5 +63,17 @@ await Promise.all([
       { frequencyHz: 293.66, durationSeconds: 0.14 },
       { frequencyHz: 220, durationSeconds: 0.24 }
     ])
+  ),
+  writeFile(
+    resolve(OUTPUT_DIRECTORY, 'countdown-pip.wav'),
+    synthesiseWave([
+      { frequencyHz: 880, durationSeconds: 0.09 }
+    ])
+  ),
+  writeFile(
+    resolve(OUTPUT_DIRECTORY, 'countdown-final.wav'),
+    synthesiseWave([
+      { frequencyHz: 1046.5, durationSeconds: 0.36 }
+    ])
   )
 ]);

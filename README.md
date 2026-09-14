@@ -65,6 +65,28 @@ There is intentionally no in-game mute or volume control. Use the device or brow
 volume and silent-mode controls. If feedback audio is blocked or unavailable, gameplay and
 visual feedback continue normally.
 
+### Round countdown and track preparation
+
+Every round starts with a large five-second countdown. A short pip accompanies each number
+from 5 to 1, followed by a longer transition pip and a brief pause before the answer controls
+appear. The countdown repeats before each new round, but not between retry tracks within the
+same round.
+
+The first track is prepared asynchronously while the countdown is visible. If preparation
+finishes within those five seconds, playback begins immediately at the transition; on a
+slower connection the round appears on time and playback starts as soon as the track becomes
+ready. Current preparation or playback failures use the existing service-unavailable screen,
+and abandoned countdowns cannot start stale audio.
+
+All four local game cues are generated together:
+
+```bash
+npm run build:sounds
+```
+
+This regenerates the correct/incorrect feedback sounds and the short/final countdown pips
+under `public/sounds/`.
+
 ## Deploying to GitHub Pages
 
 `.github/workflows/deploy-pages.yml` builds this app and deploys `dist/` to GitHub Pages on

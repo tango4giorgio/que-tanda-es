@@ -56,7 +56,7 @@ Playwright is configured with a hardcoded `executablePath: '/usr/bin/chromium-br
 ## Architecture
 
 **Data flow**: `App.tsx` is the only stateful component; it owns `catalogue`, `session`,
-`elapsedMs`, plus track and feedback audio-player refs, and renders one of the screen components in
+`elapsedMs`, countdown/preparation lifecycle state, plus track, countdown, and feedback audio-player refs, and renders one of the screen components in
 `src/ui/screens/` based on derived state (no router — `src/app/routes.ts` only defines a
 `Screen` union type that isn't currently wired to a router). There is no
 reducer/context — state transitions all happen inline in `App.tsx` by calling
@@ -98,7 +98,10 @@ hatch). Two catalogue files exist:
   file as-is. Automated tests bypass both by importing/mocking the JSON fixture directly.
 
 **Audio playback** (`src/game/audio/player.ts`): a thin wrapper around a single shared
-`HTMLAudioElement`, exposing `play`/`stop`/`getElapsedMs`/`onEnded`/`onError`. `App.tsx`
+`HTMLAudioElement`, exposing `prepare`/`playPrepared` for pre-round loading and
+`play`/`stop`/`getElapsedMs`/`onEnded`/`onError` for normal playback. Preparation sets the
+source and waits for media readiness without starting playback, so elapsed scoring remains
+at zero until the countdown completes. `App.tsx`
 polls `getElapsedMs()` on a 100ms interval while a round is active to drive the "score
 ticking down" display and to timestamp `GUESS_CORRECT` events — elapsed time from this
 poll, not the engine's own clock, is what `scoreCorrect` scores against.
@@ -108,6 +111,15 @@ separate from track playback. It uses the Web Audio API and cached decoded buffe
 short correct/incorrect cues under `public/sounds/`; this avoids affecting the existing
 `HTMLMediaElement` playback call-count assertions in component tests. Playback failures are
 non-fatal and must never interrupt gameplay.
+
+**Round countdown** (`src/ui/screens/CountdownScreen.tsx`) is presentational only. `App.tsx`
+owns the 5-to-1 timers, starts first-track preparation at 5, and uses a monotonically
+increasing preparation ID to prevent abandoned or superseded countdowns from starting stale
+audio. After the final pip, a one-second pause keeps the final count visible before the round and
+track start. `src/game/audio/countdown-sound-player.ts` uses a separate Web Audio context
+for the five short pips and final longer pip. Component tests should use short injected
+`countdownStepMs`/`countdownEndPauseMs` values or fake timers and must cover cue counts,
+preparation ordering, delayed readiness, failures, and stale-work cancellation.
 
 **GitHub Pages base path**: `vite.config.ts`'s `base` reads `process.env.GITHUB_PAGES_BASE`
 (set only by `.github/workflows/deploy-pages.yml` to `/<repo-name>/` for project-site

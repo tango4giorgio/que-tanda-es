@@ -1,4 +1,6 @@
 export interface AudioPlayer {
+  prepare(url: string): Promise<void>;
+  playPrepared(): Promise<void>;
   play(url: string): Promise<void>;
   getElapsedMs(): number;
   stop(): void;
@@ -8,6 +10,33 @@ export interface AudioPlayer {
 
 export function createAudioPlayer(audio: HTMLAudioElement = new Audio()): AudioPlayer {
   return {
+    prepare(url) {
+      audio.preload = 'auto';
+      audio.src = url;
+      audio.currentTime = 0;
+      if (audio.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) return Promise.resolve();
+
+      return new Promise<void>((resolve, reject) => {
+        const cleanup = () => {
+          audio.removeEventListener('canplay', handleReady);
+          audio.removeEventListener('error', handleError);
+        };
+        const handleReady = () => {
+          cleanup();
+          resolve();
+        };
+        const handleError = () => {
+          cleanup();
+          reject(new Error('Audio preparation failed'));
+        };
+        audio.addEventListener('canplay', handleReady, { once: true });
+        audio.addEventListener('error', handleError, { once: true });
+        audio.load();
+      });
+    },
+    async playPrepared() {
+      await audio.play();
+    },
     async play(url) {
       audio.src = url;
       await audio.play();
