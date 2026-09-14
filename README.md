@@ -6,6 +6,62 @@ Astor Piazzolla.
 
 Run all commands below from this repository's root directory.
 
+## Gameplay
+
+- A session contains three rounds.
+- Each round asks the player to identify one orchestra from three choices.
+- The player can hear up to three different tracks from the same orchestra.
+- A correct answer completes the round. Faster answers and earlier tracks award more points.
+- A wrong answer deducts 50 points and requires the player to select **Next track** before
+  the next prepared clip starts.
+- A track that reaches 30 seconds can be skipped without a points penalty.
+- After the third round, the session summary shows the final score and each round's score.
+
+Correct-answer scoring decreases linearly while the clip plays:
+
+| Track | Maximum | Minimum at 30 seconds |
+|-------|---------|-----------------------|
+| 1 | 300 | 100 |
+| 2 | 200 | 75 |
+| 3 | 100 | 50 |
+
+## UI flow
+
+The application does not use a client-side router. `src/app/App.tsx` owns the application
+state and selects one screen at a time.
+
+```mermaid
+flowchart TD
+    Load[Loading music] -->|Catalogue loaded| Start[Start screen]
+    Load -->|Catalogue or media failure| Error[Music service unavailable]
+
+    Start -->|Privacy notice| Privacy[Privacy notice]
+    Privacy -->|Back to game| Start
+    Start -->|Start game| Countdown[Round countdown: 5 to 1]
+
+    Countdown -->|Prepare and play first track| Round[Active round]
+    Countdown -->|Preparation or playback failure| Error
+
+    Round -->|Correct answer| RoundSummary[Round complete]
+    Round -->|Wrong answer| Wrong[Wrong-answer feedback]
+    Wrong -->|Next track| Starting[Loading prepared track]
+    Starting -->|Playback started; enable answers| Round
+    Starting -->|Preparation or playback failure| Error
+
+    Round -->|Track reaches 30 seconds| Skip[Next track or next round]
+    Skip -->|Another attempt remains| Starting
+    Skip -->|No attempts remain| RoundSummary
+
+    RoundSummary -->|Next round| Countdown
+    RoundSummary -->|See final score after round 3| SessionSummary[Session complete]
+    SessionSummary -->|Play again| Countdown
+
+    Error -->|Retry| Load
+```
+
+During `Loading prepared track`, all orchestra choices remain disabled. This prevents an
+answer being recorded before the replacement track's `play()` promise has resolved.
+
 ## Local development
 
 ```bash
@@ -21,6 +77,71 @@ on how you're running it:
   **test catalogue** (see below) instead — no setup needed.
 - **`npm run build`** / **`npm run preview`** (and any deployed build) always serve the real
   **archive.org catalogue** committed at `public/catalogue/starter-catalogue.json`.
+
+## Commands
+
+| Command | Purpose |
+|---------|---------|
+| `npm run dev` | Start the Vite development server with the synthetic test catalogue |
+| `npm run build` | Type-check and create the production build in `dist/` |
+| `npm run preview` | Serve the production build locally |
+| `npm run build:catalogue` | Regenerate the production catalogue |
+| `npm run build:sounds` | Regenerate feedback and countdown WAV files |
+| `npm run test:unit` | Run pure game and audio unit tests |
+| `npm run test:component` | Run React component tests |
+| `npm run test:coverage` | Run the complete Vitest suite with coverage |
+| `npm run test:e2e` | Run desktop and mobile Playwright smoke tests |
+
+## Architecture
+
+The frontend separates state orchestration, pure game rules, browser audio, and
+presentational UI:
+
+```text
+src/
+├── app/
+│   └── App.tsx                 Application state and side-effect orchestration
+├── game/
+│   ├── audio/                  Track, countdown, and feedback audio players
+│   ├── catalogue/              Runtime catalogue loading and validation
+│   ├── engine/                 Pure session, selection, and scoring rules
+│   └── types.ts                Shared game-domain types
+├── telemetry/                  Anonymous analytics and error reporting
+└── ui/
+    ├── components/             Reusable score, choice, footer, and retry controls
+    └── screens/                Presentational application screens
+```
+
+### State and game engine
+
+`App.tsx` is the only stateful UI component. It loads the catalogue, creates sessions,
+coordinates countdowns and audio, dispatches events to the game engine, and renders the
+appropriate screen.
+
+The modules under `src/game/engine/` are framework-free. `reduceSession` accepts the current
+session and a game event, then returns a new session without mutating its input. This keeps
+selection, scoring, and round progression independently testable.
+
+### Track audio
+
+`src/game/audio/player.ts` maintains two `HTMLAudioElement` instances:
+
+1. The **active** element plays the current track and provides elapsed time for scoring.
+2. The **standby** element prepares the following retry track while the active track plays.
+
+At the start of a round, the first track loads during the countdown. After playback starts,
+the next attempt begins buffering on the standby element. Selecting **Next track** waits for
+that preparation, starts standby playback, and then promotes it to the active element.
+Answer choices are enabled only after playback starts successfully.
+
+Countdown and answer-feedback sounds use separate Web Audio players. Their failures are
+non-fatal and do not interrupt the game.
+
+### Catalogue
+
+The catalogue is a runtime JSON asset rather than bundled application code.
+`src/game/catalogue/catalogue.ts` validates its orchestra IDs, track IDs, preview URLs, and
+required track coverage before a session can begin.
 
 ### Real catalogue (archive.org)
 
@@ -75,8 +196,9 @@ same round.
 The first track is prepared asynchronously while the countdown is visible. If preparation
 finishes within those five seconds, playback begins immediately at the transition; on a
 slower connection the round appears on time and playback starts as soon as the track becomes
-ready. Current preparation or playback failures use the existing service-unavailable screen,
-and abandoned countdowns cannot start stale audio.
+ready. Once it starts, the following retry track is prepared in parallel without changing
+or interrupting the active source. Current preparation or playback failures use the existing
+service-unavailable screen, and abandoned countdowns cannot start stale audio.
 
 All four local game cues are generated together:
 
