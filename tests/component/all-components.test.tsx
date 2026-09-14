@@ -42,24 +42,24 @@ describe('remaining components', () => {
   });
   it('renders an active round and skip control when exhausted', () => {
     const exhausted = { ...round, attempts: [{ ...round.attempts[0], outcome: 'wrong' as const }], trackIds: ['track-1'] };
-    render(<RoundScreen round={exhausted} tracks={[{ id: 'track-1', orchestraId: 'di-sarli', title: 'Clip', previewUrl: 'https://example.test/a.mp3', durationMs: 30000 }]} orchestras={ORCHESTRAS} elapsedMs={5000} awaitingContinue={false} onGuess={vi.fn()} onSkip={vi.fn()} onContinue={vi.fn()} />);
+    render(<RoundScreen round={exhausted} tracks={[{ id: 'track-1', orchestraId: 'di-sarli', title: 'Clip', previewUrl: 'https://example.test/a.mp3', durationMs: 30000 }]} orchestras={ORCHESTRAS} elapsedMs={5000} awaitingContinue={false} trackReady onGuess={vi.fn()} onSkip={vi.fn()} onContinue={vi.fn()} />);
     expect(screen.getByRole('heading', { name: 'Guess the orchestra' })).toBeInTheDocument();
     expect(screen.getByText('Round 1 of 3')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Next round' })).toBeInTheDocument();
   });
   it('offers "Next track" once a non-final track finishes playing without a guess', () => {
     const ended = { ...round, attempts: [{ ...round.attempts[0], elapsedMs: 30000 }] };
-    render(<RoundScreen round={ended} tracks={[{ id: 'track-1', orchestraId: 'di-sarli', title: 'Clip', previewUrl: 'https://example.test/a.mp3', durationMs: 30000 }]} orchestras={ORCHESTRAS} elapsedMs={30000} awaitingContinue={false} onGuess={vi.fn()} onSkip={vi.fn()} onContinue={vi.fn()} />);
+    render(<RoundScreen round={ended} tracks={[{ id: 'track-1', orchestraId: 'di-sarli', title: 'Clip', previewUrl: 'https://example.test/a.mp3', durationMs: 30000 }]} orchestras={ORCHESTRAS} elapsedMs={30000} awaitingContinue={false} trackReady onGuess={vi.fn()} onSkip={vi.fn()} onContinue={vi.fn()} />);
     expect(screen.getByRole('button', { name: 'Next track' })).toBeInTheDocument();
   });
   it('offers "Next round" once the final track finishes playing without a guess', () => {
     const ended = { ...round, attempts: [{ ...round.attempts[0], trackNumber: 3 as const, elapsedMs: 30000 }] };
-    render(<RoundScreen round={ended} tracks={[{ id: 'track-1', orchestraId: 'di-sarli', title: 'Clip', previewUrl: 'https://example.test/a.mp3', durationMs: 30000 }]} orchestras={ORCHESTRAS} elapsedMs={30000} awaitingContinue={false} onGuess={vi.fn()} onSkip={vi.fn()} onContinue={vi.fn()} />);
+    render(<RoundScreen round={ended} tracks={[{ id: 'track-1', orchestraId: 'di-sarli', title: 'Clip', previewUrl: 'https://example.test/a.mp3', durationMs: 30000 }]} orchestras={ORCHESTRAS} elapsedMs={30000} awaitingContinue={false} trackReady onGuess={vi.fn()} onSkip={vi.fn()} onContinue={vi.fn()} />);
     expect(screen.getByRole('button', { name: 'Next round' })).toBeInTheDocument();
   });
   it('shows a wrong-answer indication and gates the next track behind a manual continue', () => {
     const onContinue = vi.fn();
-    render(<RoundScreen round={round} tracks={[{ id: 'track-1', orchestraId: 'di-sarli', title: 'Clip', previewUrl: 'https://example.test/a.mp3', durationMs: 30000 }]} orchestras={ORCHESTRAS} elapsedMs={0} awaitingContinue={true} onGuess={vi.fn()} onSkip={vi.fn()} onContinue={onContinue} />);
+    render(<RoundScreen round={round} tracks={[{ id: 'track-1', orchestraId: 'di-sarli', title: 'Clip', previewUrl: 'https://example.test/a.mp3', durationMs: 30000 }]} orchestras={ORCHESTRAS} elapsedMs={0} awaitingContinue={true} trackReady onGuess={vi.fn()} onSkip={vi.fn()} onContinue={onContinue} />);
     expect(screen.getByRole('alert')).toHaveTextContent('Wrong answer');
     const choiceButtons = screen.getAllByRole('button', { name: /Di Sarli|Troilo|Pugliese/ });
     choiceButtons.forEach((button) => expect(button).toBeDisabled());
@@ -77,7 +77,7 @@ describe('remaining components', () => {
         { trackNumber: 3, trackId: 'track-3', elapsedMs: 0, guessOrchestraId: null, outcome: 'pending', points: 0 }
       ]
     };
-    render(<RoundScreen round={midRound} tracks={[]} orchestras={ORCHESTRAS} elapsedMs={0} awaitingContinue={true} onGuess={vi.fn()} onSkip={vi.fn()} onContinue={vi.fn()} />);
+    render(<RoundScreen round={midRound} tracks={[]} orchestras={ORCHESTRAS} elapsedMs={0} awaitingContinue={true} trackReady onGuess={vi.fn()} onSkip={vi.fn()} onContinue={vi.fn()} />);
     expect(screen.getByRole('button', { name: 'Next track' })).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: 'Next round' })).not.toBeInTheDocument();
   });
@@ -91,7 +91,7 @@ describe('remaining components', () => {
         { trackNumber: 3, trackId: 'track-3', elapsedMs: 500, guessOrchestraId: 'troilo', outcome: 'wrong', points: -50 }
       ]
     };
-    render(<RoundScreen round={lastRound} tracks={[]} orchestras={ORCHESTRAS} elapsedMs={0} awaitingContinue={true} onGuess={vi.fn()} onSkip={vi.fn()} onContinue={vi.fn()} />);
+    render(<RoundScreen round={lastRound} tracks={[]} orchestras={ORCHESTRAS} elapsedMs={0} awaitingContinue={true} trackReady onGuess={vi.fn()} onSkip={vi.fn()} onContinue={vi.fn()} />);
     expect(screen.getByRole('button', { name: 'Next round' })).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: 'Next track' })).not.toBeInTheDocument();
   });

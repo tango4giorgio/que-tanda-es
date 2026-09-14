@@ -133,6 +133,7 @@ describe('App', () => {
     await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
     fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
     await waitFor(() => expect(screen.getByText(/Track 1 of up to 3/)).toBeInTheDocument());
+    await waitFor(() => expect(HTMLMediaElement.prototype.load).toHaveBeenCalledTimes(2));
     const playsAfterStart = play.mock.calls.length;
     const wrongChoice = screen.getAllByRole('button').find((button) => button.textContent !== "Juan D'Arienzo" && ['Carlos Di Sarli', "Juan D'Arienzo", 'Osvaldo Pugliese', 'Aníbal Troilo', 'Astor Piazzolla'].includes(button.textContent ?? ''))!;
     fireEvent.click(wrongChoice);
@@ -143,6 +144,53 @@ describe('App', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Next track' }));
     await waitFor(() => expect(play.mock.calls.length).toBe(playsAfterStart + 1));
     expect(screen.queryByRole('alert')).not.toBeInTheDocument();
+  });
+
+  it('keeps answer choices disabled until the prepared next track starts playing', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => import('../../public/catalogue/starter-catalogue.json').then((module) => module.default)
+    }));
+    vi.spyOn(Math, 'random').mockReturnValue(0);
+    let resolveNextPlayback!: () => void;
+    let playCount = 0;
+    vi.spyOn(HTMLMediaElement.prototype, 'play').mockImplementation(() => {
+      playCount += 1;
+      if (playCount === 2) {
+        return new Promise<void>((resolve) => {
+          resolveNextPlayback = resolve;
+        });
+      }
+      return Promise.resolve();
+    });
+    vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => undefined);
+    render(<App countdownStepMs={1} countdownEndPauseMs={1} />);
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Start game' })).toBeInTheDocument());
+    fireEvent.click(screen.getByRole('button', { name: 'Start game' }));
+    await waitFor(() => expect(screen.getByText(/Track 1 of up to 3/)).toBeInTheDocument());
+
+    const orchestraNames = ['Carlos Di Sarli', "Juan D'Arienzo", 'Osvaldo Pugliese', 'Aníbal Troilo', 'Astor Piazzolla'];
+    const wrongChoice = screen.getAllByRole('button').find((button) =>
+      button.textContent !== "Juan D'Arienzo" && orchestraNames.includes(button.textContent ?? '')
+    )!;
+    fireEvent.click(wrongChoice);
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Next track' })).toBeInTheDocument());
+
+    fireEvent.click(screen.getByRole('button', { name: 'Next track' }));
+
+    await waitFor(() => expect(screen.getByRole('status')).toHaveTextContent('Loading next track'));
+    const loadingChoices = screen.getByRole('group', { name: 'Orchestra choices' }).querySelectorAll('button');
+    for (const choice of loadingChoices) {
+      expect(choice).toBeDisabled();
+    }
+
+    resolveNextPlayback();
+
+    await waitFor(() => expect(screen.queryByRole('status')).not.toBeInTheDocument());
+    const playingChoices = screen.getByRole('group', { name: 'Orchestra choices' }).querySelectorAll('button');
+    for (const choice of playingChoices) {
+      expect(choice).toBeEnabled();
+    }
   });
 
   it('plays the correct feedback sound once for a correct answer', async () => {

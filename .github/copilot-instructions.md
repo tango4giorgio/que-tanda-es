@@ -97,11 +97,13 @@ hatch). Two catalogue files exist:
   build`/`preview`/production always serve the real committed `starter-catalogue.json`
   file as-is. Automated tests bypass both by importing/mocking the JSON fixture directly.
 
-**Audio playback** (`src/game/audio/player.ts`): a thin wrapper around a single shared
-`HTMLAudioElement`, exposing `prepare`/`playPrepared` for pre-round loading and
-`play`/`stop`/`getElapsedMs`/`onEnded`/`onError` for normal playback. Preparation sets the
-source and waits for media readiness without starting playback, so elapsed scoring remains
-at zero until the countdown completes. `App.tsx`
+**Audio playback** (`src/game/audio/player.ts`): a thin wrapper around active and standby
+`HTMLAudioElement` instances. `prepare`/`playPrepared` load the first track during the
+pre-round countdown; `prepareNext` buffers the following retry while the active track keeps
+playing; and `playNext` promotes the standby element only after its `play()` promise resolves.
+Answer choices stay disabled during that promotion so elapsed scoring and input begin only
+once the next track has actually started. `play`/`stop`/`getElapsedMs`/`onEnded`/`onError`
+operate on the active playback lifecycle. `App.tsx`
 polls `getElapsedMs()` on a 100ms interval while a round is active to drive the "score
 ticking down" display and to timestamp `GUESS_CORRECT` events — elapsed time from this
 poll, not the engine's own clock, is what `scoreCorrect` scores against.

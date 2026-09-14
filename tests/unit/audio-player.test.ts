@@ -47,6 +47,36 @@ describe('audio player', () => {
     expect(removeEventListener).toHaveBeenCalledWith('canplay', expect.any(Function));
     expect(removeEventListener).toHaveBeenCalledWith('error', expect.any(Function));
   });
+  it('prepares the next source without interrupting active playback and promotes it after playback starts', async () => {
+    const active = new Audio();
+    const next = new Audio();
+    active.play = vi.fn().mockResolvedValue(undefined);
+    active.pause = vi.fn();
+    next.load = vi.fn();
+    next.play = vi.fn().mockResolvedValue(undefined);
+    Object.defineProperty(next, 'readyState', {
+      configurable: true,
+      get: () => HTMLMediaElement.HAVE_NOTHING
+    });
+    Object.defineProperty(active, 'currentTime', { value: 3, writable: true });
+    Object.defineProperty(next, 'currentTime', { value: 0, writable: true });
+    const player = createAudioPlayer(active, next);
+
+    await player.play('https://example.test/current.mp3');
+    const preparation = player.prepareNext('https://example.test/next.mp3');
+
+    expect(active.pause).not.toHaveBeenCalled();
+    expect(active.src).toBe('https://example.test/current.mp3');
+    expect(next.src).toBe('https://example.test/next.mp3');
+    expect(next.play).not.toHaveBeenCalled();
+
+    next.dispatchEvent(new Event('canplay'));
+    await preparation;
+    await player.playNext();
+
+    Object.defineProperty(next, 'currentTime', { value: 1.5, writable: true });
+    expect(player.getElapsedMs()).toBe(1500);
+  });
   it('stops and supports ended/error subscriptions', () => {
     const audio = new Audio();
     audio.pause = vi.fn();

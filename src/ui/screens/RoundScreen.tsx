@@ -3,12 +3,13 @@ import { AnswerChoices } from '../components/AnswerChoices';
 import { ScoreBadge } from '../components/ScoreBadge';
 import { PotentialScore } from '../components/PotentialScore';
 
-export function RoundScreen({ round, tracks, orchestras, elapsedMs, awaitingContinue, onGuess, onSkip, onContinue }: {
+export function RoundScreen({ round, tracks, orchestras, elapsedMs, awaitingContinue, trackReady, onGuess, onSkip, onContinue }: {
   round: Round;
   tracks: Track[];
   orchestras: Orchestra[];
   elapsedMs: number;
   awaitingContinue: boolean;
+  trackReady: boolean;
   onGuess: (id: Orchestra['id']) => void;
   onSkip: () => void;
   onContinue: () => void;
@@ -28,9 +29,10 @@ export function RoundScreen({ round, tracks, orchestras, elapsedMs, awaitingCont
     <h1>Guess the orchestra</h1>
     <p>Track {current?.trackNumber ?? 3} of up to 3</p>
     {awaitingContinue && <p role="alert" className="feedback feedback-wrong">Wrong answer. Have another go on the next track.</p>}
+    {!awaitingContinue && !trackReady && <p role="status">Loading next track…</p>}
     <PotentialScore elapsedMs={elapsedMs} trackNumber={current?.trackNumber ?? 3} />
     <ScoreBadge score={round.roundScore} />
-    <AnswerChoices choices={choices} disabled={round.status !== 'active' || awaitingContinue} onSelect={onGuess} />
+    <AnswerChoices choices={choices} disabled={round.status !== 'active' || awaitingContinue || !trackReady} onSelect={onGuess} />
     {showSkipControl && (
       <button type="button" onClick={awaitingContinue ? onContinue : onSkip}>
         {isLastTrack ? 'Next round' : 'Next track'}

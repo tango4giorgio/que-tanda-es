@@ -40,11 +40,13 @@ export function App({
   const [awaitingContinue, setAwaitingContinue] = useState(false);
   const [showSessionSummary, setShowSessionSummary] = useState(false);
   const [countdown, setCountdown] = useState<{ id: number; value: CountdownValue }>();
+  const [trackReady, setTrackReady] = useState(false);
   const audio = useRef<AudioPlayer | undefined>(undefined);
   const feedbackAudio = useRef<FeedbackSoundPlayer | undefined>(undefined);
   const countdownAudio = useRef<CountdownSoundPlayer | undefined>(undefined);
   const preparationId = useRef(0);
-  const preparedTrack = useRef<{ id: number; result: Promise<boolean> }>();
+  const preparedTrack = useRef<{ id: number; session: Session; result: Promise<boolean> }>();
+  const preparedNextTrack = useRef<{ trackId: string; result: Promise<boolean> }>();
 
   useEffect(() => {
     initialiseErrorReporting();
@@ -100,9 +102,15 @@ export function App({
             setError(true);
             return;
           }
-          return audio.current?.playPrepared().catch(() => {
-            if (preparationId.current === countdown.id) setError(true);
-          });
+          return audio.current?.playPrepared()
+            .then(() => {
+              if (preparationId.current !== countdown.id) return;
+              setTrackReady(true);
+              prepareNextAttempt(preparation.session);
+            })
+            .catch(() => {
+              if (preparationId.current === countdown.id) setError(true);
+            });
         });
       }, countdownEndPauseMs);
     }, countdownStepMs);
@@ -134,8 +142,11 @@ export function App({
     preparationId.current = id;
     preparedTrack.current = {
       id,
+      session: nextSession,
       result: audio.current.prepare(firstTrack.previewUrl).then(() => true, () => false)
     };
+    preparedNextTrack.current = undefined;
+    setTrackReady(false);
     setSession(nextSession);
     setCountdown({ id, value: 5 });
   };
@@ -179,9 +190,7 @@ export function App({
       ? { type: 'GUESS_CORRECT', orchestraId, elapsedMs }
       : { type: 'GUESS_WRONG', orchestraId });
     setSession(next);
-    if (isCorrect) {
-      playPendingTrack(next);
-    } else {
+    if (!isCorrect) {
       // Pause here: wait for the player to acknowledge the wrong guess and
       // explicitly choose to continue, rather than auto-advancing the audio.
       setAwaitingContinue(true);
@@ -191,21 +200,52 @@ export function App({
     audio.current?.stop();
     const next = reduceSession(session, { type: 'SKIP' });
     setSession(next);
-    playPendingTrack(next);
+    void playNextAttempt(next);
   };
   const continueAfterWrongGuess = () => {
     setAwaitingContinue(false);
     const hasPending = currentRound?.attempts.some((attempt) => attempt.outcome === 'pending');
     if (hasPending) {
-      playPendingTrack(session);
+      void playNextAttempt(session);
     } else {
       dispatchSkip();
     }
   };
-  function playPendingTrack(next: Session) {
+  function getPendingTrack(next: Session) {
     const pending = next.rounds[next.currentRoundIndex]?.attempts.find((attempt) => attempt.outcome === 'pending');
-    const nextTrack = catalogue!.tracks.find((track) => track.id === pending?.trackId);
-    if (nextTrack && next.rounds[next.currentRoundIndex].status === 'active') void audio.current?.play(nextTrack.previewUrl).catch(() => setError(true));
+    return catalogue!.tracks.find((track) => track.id === pending?.trackId);
+  }
+  function prepareNextAttempt(next: Session) {
+    const pendingAttempts = next.rounds[next.currentRoundIndex]?.attempts.filter((attempt) => attempt.outcome === 'pending') ?? [];
+    const nextTrack = catalogue!.tracks.find((track) => track.id === pendingAttempts[1]?.trackId);
+    if (!nextTrack || next.rounds[next.currentRoundIndex].status !== 'active' || !audio.current) {
+      preparedNextTrack.current = undefined;
+      return;
+    }
+    preparedNextTrack.current = {
+      trackId: nextTrack.id,
+      result: audio.current.prepareNext(nextTrack.previewUrl).then(() => true, () => false)
+    };
+  }
+  async function playNextAttempt(next: Session) {
+    const nextTrack = getPendingTrack(next);
+    if (!nextTrack || next.rounds[next.currentRoundIndex].status !== 'active' || !audio.current) return;
+    setTrackReady(false);
+    const queued = preparedNextTrack.current;
+    const ready = queued?.trackId === nextTrack.id
+      ? await queued.result
+      : await audio.current.prepareNext(nextTrack.previewUrl).then(() => true, () => false);
+    if (!ready) {
+      setError(true);
+      return;
+    }
+    try {
+      await audio.current.playNext();
+      setTrackReady(true);
+      prepareNextAttempt(next);
+    } catch {
+      setError(true);
+    }
   }
   return <RoundScreen
     round={currentRound!}
@@ -213,6 +253,7 @@ export function App({
     orchestras={ORCHESTRAS}
     elapsedMs={elapsedMs}
     awaitingContinue={awaitingContinue}
+    trackReady={trackReady}
     onGuess={dispatchGuess}
     onSkip={dispatchSkip}
     onContinue={continueAfterWrongGuess}
