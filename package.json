@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "build:catalogue": "tsx tools/build-catalogue/index.ts",
+    "build:sounds": "tsx tools/build-sounds/generate-feedback-sounds.ts",
     "preview": "vite preview",
     "test:unit": "vitest run tests/unit",
     "test:component": "vitest run tests/component",

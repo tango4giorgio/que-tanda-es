@@ -12,6 +12,10 @@ import { PrivacyNotice } from '../ui/screens/PrivacyNotice';
 import { initialiseErrorReporting } from '../telemetry/errors';
 import { track } from '../telemetry/analytics';
 import { createAudioPlayer, type AudioPlayer } from '../game/audio/player';
+import {
+  createFeedbackSoundPlayer,
+  type FeedbackSoundPlayer
+} from '../game/audio/feedback-sound-player';
 import '../styles/index.css';
 
 export function App() {
@@ -21,7 +25,9 @@ export function App() {
   const [privacy, setPrivacy] = useState(false);
   const [elapsedMs, setElapsedMs] = useState(0);
   const [awaitingContinue, setAwaitingContinue] = useState(false);
+  const [showSessionSummary, setShowSessionSummary] = useState(false);
   const audio = useRef<AudioPlayer | undefined>(undefined);
+  const feedbackAudio = useRef<FeedbackSoundPlayer | undefined>(undefined);
 
   useEffect(() => {
     initialiseErrorReporting();
@@ -70,16 +76,22 @@ export function App() {
   const startSession = () => {
     const next = createSession(catalogue);
     setAwaitingContinue(false);
+    setShowSessionSummary(false);
     setSession(next);
     playCurrentRound(next);
   };
   if (!session) return <StartScreen onStart={startSession} onPrivacy={() => setPrivacy(true)} />;
-  if (session.status === 'complete') return <SessionSummary session={session} onReplay={startSession} />;
+  if (session.status === 'complete' && showSessionSummary) {
+    return <SessionSummary session={session} onReplay={startSession} />;
+  }
   if (currentRound?.status !== 'active') {
     const orchestra = ORCHESTRAS.find((item) => item.id === currentRound?.correctOrchestraId) ?? ORCHESTRAS[0];
     return <RoundSummary round={currentRound!} orchestra={orchestra} isLastRound={session.currentRoundIndex === 2} onContinue={() => {
       setAwaitingContinue(false);
-      if (session.currentRoundIndex === 2) return;
+      if (session.currentRoundIndex === 2) {
+        setShowSessionSummary(true);
+        return;
+      }
       const next = { ...session, currentRoundIndex: (session.currentRoundIndex + 1) as 0 | 1 | 2 };
       setSession(next);
       playCurrentRound(next);
@@ -88,6 +100,11 @@ export function App() {
   const dispatchGuess = (orchestraId: OrchestraId) => {
     const isCorrect = orchestraId === currentRound?.correctOrchestraId;
     audio.current?.stop();
+    feedbackAudio.current ??= createFeedbackSoundPlayer();
+    const playFeedback = () => isCorrect
+      ? feedbackAudio.current!.playCorrect()
+      : feedbackAudio.current!.playIncorrect();
+    void Promise.resolve().then(playFeedback).catch(() => undefined);
     const next = reduceSession(session, isCorrect
       ? { type: 'GUESS_CORRECT', orchestraId, elapsedMs }
       : { type: 'GUESS_WRONG', orchestraId });

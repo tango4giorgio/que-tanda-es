@@ -4,8 +4,7 @@ A client-side progressive web game for identifying tango orchestras from short a
 The MVP starts with Carlos Di Sarli, Juan D'Arienzo, Anibal Troilo, Osvaldo Pugliese, and
 Astor Piazzolla.
 
-This is the frontend workspace. Run all commands below from this `frontend/` directory
-(see the repository root [README.md](../README.md) for the overall repo layout).
+Run all commands below from this repository's root directory.
 
 ## Local development
 
@@ -54,6 +53,17 @@ on network access to archive.org. It is not music.
 file's contents for the `/catalogue/starter-catalogue.json` request whenever `npm run dev`
 is running; this does not affect `npm run build`/`npm run preview`, and is never used by
 automated tests (those load catalogue fixtures directly).
+
+### Answer feedback sounds
+
+Correct guesses play a short, polite confirmation chime; wrong guesses play a distinct,
+gentle descending tone. Skipping a track does not play either cue. The sounds are generated
+locally by `npm run build:sounds` and committed under `public/sounds/`, so they do not depend
+on an external service.
+
+There is intentionally no in-game mute or volume control. Use the device or browser's own
+volume and silent-mode controls. If feedback audio is blocked or unavailable, gameplay and
+visual feedback continue normally.
 
 ## Deploying to GitHub Pages
 

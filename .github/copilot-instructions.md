@@ -21,6 +21,7 @@ npm run dev              # Vite dev server at :5173
 npm run build             # tsc -b && vite build -> dist/
 npm run preview           # serve the production build locally
 npm run build:catalogue   # regenerate public/catalogue/starter-catalogue.json from tools/build-catalogue/archive-org-tracks.ts
+npm run build:sounds      # regenerate public/sounds/correct.wav and incorrect.wav
 ```
 
 Tests:
@@ -55,7 +56,7 @@ Playwright is configured with a hardcoded `executablePath: '/usr/bin/chromium-br
 ## Architecture
 
 **Data flow**: `App.tsx` is the only stateful component; it owns `catalogue`, `session`,
-`elapsedMs`, and a single `AudioPlayer` ref, and renders one of the screen components in
+`elapsedMs`, plus track and feedback audio-player refs, and renders one of the screen components in
 `src/ui/screens/` based on derived state (no router — `src/app/routes.ts` only defines a
 `Screen` union type that isn't currently wired to a router). There is no
 reducer/context — state transitions all happen inline in `App.tsx` by calling
@@ -102,6 +103,12 @@ polls `getElapsedMs()` on a 100ms interval while a round is active to drive the 
 ticking down" display and to timestamp `GUESS_CORRECT` events — elapsed time from this
 poll, not the engine's own clock, is what `scoreCorrect` scores against.
 
+**Answer feedback audio** (`src/game/audio/feedback-sound-player.ts`) is deliberately
+separate from track playback. It uses the Web Audio API and cached decoded buffers for the
+short correct/incorrect cues under `public/sounds/`; this avoids affecting the existing
+`HTMLMediaElement` playback call-count assertions in component tests. Playback failures are
+non-fatal and must never interrupt gameplay.
+
 **GitHub Pages base path**: `vite.config.ts`'s `base` reads `process.env.GITHUB_PAGES_BASE`
 (set only by `.github/workflows/deploy-pages.yml` to `/<repo-name>/` for project-site
 builds); `loadCatalogue` reads `import.meta.env.BASE_URL` rather than a hardcoded `/` so both
@@ -120,12 +127,5 @@ locally-served and Pages-subpath-served builds resolve the catalogue fetch corre
   (`reduceSession` clones before mutating) even though the engine isn't written with a
   formal immutability library — follow this pattern for any new engine functions.
 - Orchestra IDs are a closed, ordered union (`ORCHESTRA_IDS` in `src/game/types.ts`); the
-  MVP is intentionally limited to these five (Carlos Di Sarli, Juan D'Arienzo, Anibal
-  Troilo, Osvaldo Pugliese, Astor Piazzolla) — see `../specs/001-mvp-core-game/spec.md` and
-  `../specs/ROADMAP.md` in the parent repo for product rationale and future phases (content
-  reliability, difficulty/replay, accounts, social, polish).
-- This repo is checked out as a **git submodule** of a parent spec-driven-development repo
-  (specs/plans/tasks live one level up, outside this submodule, under `../specs/` and
-  `../.specify/`) — when a change here is driven by one of those specs, check the
-  corresponding `spec.md`/`tasks.md` for context, but do not expect them to be present when
-  this repo is cloned standalone.
+  game is intentionally limited to these five (Carlos Di Sarli, Juan D'Arienzo, Anibal
+  Troilo, Osvaldo Pugliese, Astor Piazzolla).
